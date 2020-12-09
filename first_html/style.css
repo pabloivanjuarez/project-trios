@@ -1,0 +1,84 @@
+.jtron-image {
+    height: 80vh;
+    background-image: url(./images/pexels-dana-tentis-370799.jpg);
+}
+
+.jumbotext {
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+   padding: 25px;
+    color: white;
+}
+
+.product {
+    width: 99vw;
+    float: left;
+    text-align: center;
+}
+
+.service {
+    width: 10pc;
+    padding: 20px;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("./images/pexels-shonejai-1227511.jpg");
+  
+    /* Set a specific height */
+    min-height: 300px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .map-search {
+      padding-top: 50px;
+  }
+
+  .mapbox {
+      padding: 25px;
+      text-align: center;
+  }
+
+  .map {
+        margin-left: auto;
+        margin-right: auto;
+  }
+
+  .review-cards-title {
+      text-align: center;
+  }
+
+  .review-cards {
+
+      margin-left: auto;
+      margin-right: auto;
+      /* text-align: center; */
+      /* align-items: center; */
+      justify-content: center;
+  }
+
+  .review-card {
+      padding: 25px;
+      margin: 10px;
+      border: 1px solid black;
+  }
+
+  .review-end {
+      padding-bottom: 100px;
+  }
+
+  footer {
+      background-color: grey;
+      height: 50px;
+      color: white;
+  }
+
+  /* div {
+    border: 1px solid red;
+} */
