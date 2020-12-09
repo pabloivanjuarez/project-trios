@@ -6,7 +6,7 @@ const servicesSchema = new Schema({
     service: { type: String, required: true },
     phone: { type: Number, required: true },
     hourly: { type: Number, required: true },
-    distance: { type: String, required: true },
+    distance: { type: Number, required: true },
 });
 
 const Services = mongoose.model("Services", servicesSchema);
