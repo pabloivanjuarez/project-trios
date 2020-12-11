@@ -1,19 +1,6 @@
-// import React from 'react'
-
-// function Map() {
-//   return (
-//     <div>
-
-//     </div>
-//   )
-// }
-
-// export default Map
-
-
 import React, { useRef, useEffect, useState } from 'react';
 import mapboxgl from 'mapbox-gl';
-import './style.module.css';
+import './Map.css';
 
 mapboxgl.accessToken =
   'pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4M29iazA2Z2gycXA4N2pmbDZmangifQ.-g_vE53SD2WrJ6tFX7QHmA';
