@@ -2,10 +2,10 @@ const path = require("path");
 const router = require("express").Router();
 const apiRoutes = require("./api");
 
-// IF: API Routes
+// starts url parameter with "/api"
 router.use("/api", apiRoutes);
 
-//ELSE: React App
+//if no api hits found, send React App
 router.use(function(req, res) {
   res.sendFile(path.join(__dirname, "../client/build/index.html"));
 });
