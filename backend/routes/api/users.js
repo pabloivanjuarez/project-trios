@@ -1,5 +1,7 @@
 const router = require("express").Router();
 const userController = require("../../controllers/userController");
+//userController vs servicesController
+
 
 // Matches with "/api/users"
 router.route("/")
