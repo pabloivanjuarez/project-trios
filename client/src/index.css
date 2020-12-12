@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+footer {
+  height: 50px;
+  padding: 10px;
+}
+
+.jumbotron {
+  width: 99vw;
+  align-items: center;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
