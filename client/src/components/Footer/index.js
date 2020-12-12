@@ -3,7 +3,10 @@ import React from 'react'
 function Footer() {
   return (
     <div>
-      <h1>here is a footer</h1>
+      <footer>
+
+Nerds Next Door
+</footer>
     </div>
   )
 }
