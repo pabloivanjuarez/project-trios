@@ -4,6 +4,7 @@ import Map from './components/Map/index';
 import Header from "./components/Header/index"
 import Footer from "./components/Footer/index"
 import Jumbotron from "./components/Jumbotron/index"
+import Services from "./components/Services/index"
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
     <div>
       <Header />
       <Jumbotron />
+      <Services />
       <Map />
       <Footer />
     </div>
