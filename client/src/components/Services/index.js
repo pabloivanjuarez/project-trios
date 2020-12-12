@@ -8,32 +8,32 @@ function Services() {
 
       <div className="product row">
         <div className="col">
-          <img className="service" src="./images/cell_phone.svg" />
+          <img src="./Assets/images/cell_phone.svg" />
             </div>
           <div className="col">
 
-            <img className="service" src="./images/tablet-1.png" />
+            <img className="service" src="./Assets/images/tablet-1.png" />
             </div>
             <div className="col">
-              <img className="service" src="./images/webconference.png" />
+              <img className="service" src="./Assets/images/webconference.png" />
             </div>
               <div className="col">
-                <img className="service" src="./images/wifi.png" />
+                <img className="service" src="./Assets/images/wifi.png" />
             </div>
                 <div className="col">
-                  <img className="service" src="./images/internet.jpg" />
+                  <img className="service" src="./Assets/images/internet.jpg" />
             </div>
                   <div className="col">
-                    <img className="service" src="./images/computer.png" />
+                    <img className="service" src="./Assets/images/computer.png" />
             </div>
                     <div className="col">
-                      <img className="service" src="./images/Devices-printer-icon.png" />
+                      <img className="service" src="./Assets/images/Devices-printer-icon.png" />
             </div>
                       <div className="col">
-                        <img className="service" src="./images/digitalcamera.png" />
+                        <img className="service" src="./Assets/images/digitalcamera.png" />
             </div>
                         <div className="col">
-                          image
+                          
             </div>
 
       </div>
