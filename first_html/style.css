@@ -3,6 +3,11 @@
     background-image: url(./images/pexels-dana-tentis-370799.jpg);
 }
 
+.user-jtron-image {
+    height: 30vh;
+    background-image: url(./images/pexels-dana-tentis-370799.jpg);
+}
+
 .jumbotext {
     margin-top: auto;
     margin-bottom: auto;
@@ -77,6 +82,48 @@
       background-color: grey;
       height: 50px;
       color: white;
+  }
+
+  .userPhoto {
+      width: auto;
+      padding: 25px;
+  }
+
+  .userText {
+      text-align: center;
+  }
+
+  .badgeImg {
+      width: 30px;
+  }
+  
+  #servicesItems {
+    display: block;
+    float: left;
+    width: 100%; 
+    margin: 0;
+    padding: 10;
+    text-align: center;
+    list-style-type: none;
+    margin-bottom: 50px;
+  }
+
+  .mapDiv {
+      text-align: center;
+  }
+
+  .serviceMap {
+      padding: 20px;
+  }
+
+  .mainSupportText {
+      padding: 20px;
+      width: 50pc;
+  }
+
+  .contactCard {
+      margin-left: 25px;
+      margin-bottom: 50px;
   }
 
   /* div {
