@@ -12,9 +12,14 @@ code {
     monospace;
 }
 
+.nav {
+  background-color: #f8f9fa;
+}
+
 footer {
   height: 50px;
   padding: 10px;
+  background-color: lightblue;
 }
 
 .jumbotron {
@@ -24,4 +29,19 @@ footer {
   text-align: center;
   margin-right: auto;
   margin-left: auto;
+  background-image: linear-gradient(lightblue, cornflowerblue, darkslateblue);
+  border-radius: 0 !important;
 }
+
+.jumbotext {
+  padding-top: 40px;
+}
+
+.review-card {
+  float: left;
+  width: 18rem;
+}
+
+/* div {
+  border: 1px solid red;
+} */
