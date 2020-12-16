@@ -5,6 +5,8 @@ import './Map.css';
 mapboxgl.accessToken =
   'pk.eyJ1IjoiZGF2aWRuamFmZmUiLCJhIjoiY2tpanQzdzA3MDM1NjJ0cW1lMmVvdmUweiJ9.9znxRvwMbpk6SQKt0hxvUQ';
 
+
+  
 const Map = () => {
   const mapContainerRef = useRef(null);
 
@@ -36,6 +38,8 @@ const Map = () => {
       setZoom(map.getZoom().toFixed(2));
     });
 
+    map.scrollZoom.disable();
+
     // Clean up on unmount
     return () => map.remove();
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
@@ -51,6 +55,8 @@ const Map = () => {
     </div>
   );
 };
+
+
 
 export default Map;
 
