@@ -4,7 +4,9 @@ module.exports = {
     findAll: (req,res) => {
         db.Services
         .find(req.body)
-        .then(data => res.json(data))
+        .then(data => {
+            console.log(data)
+            res.json(data)})
         .catch(err => res.status(422).json(err));
     },
     findById: (req,res) => {
