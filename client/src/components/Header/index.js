@@ -2,7 +2,7 @@ import React from 'react'
 
 function Header() {
   return (
-    <div>
+    <div class="nav">
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
           <a className="navbar-brand" href="/">Nerds Next Door</a>
@@ -36,15 +36,15 @@ function Header() {
                   <li><a className="dropdown-item" href="#">Other</a></li>
                 </ul>
               </li>
-        
-                </ul>
+
+            </ul>
             {/* <form className="d-flex">
               <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button className="btn btn-outline-success" type="submit">Search</button>
                 </form> */}
-            </div>
           </div>
-    </nav>
+        </div>
+      </nav>
     </div>
   )
 }
