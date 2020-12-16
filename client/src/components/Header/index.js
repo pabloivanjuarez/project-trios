@@ -1,4 +1,5 @@
-import React from 'react'
+import React from "react";
+import Login from "../Modal"
 
 function Header() {
   return (
@@ -18,6 +19,7 @@ function Header() {
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="#">Home</a>
               </li>
+              <li><Login /></li>
               <li className="nav-item">
                 <a className="nav-link" href="#">Sign Up</a>
               </li>
