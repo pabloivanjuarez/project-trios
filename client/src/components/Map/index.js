@@ -25,9 +25,16 @@ const Map = () => {
 
 
     // Add pins to map
+    
+
     var marker = new mapboxgl.Marker()
-    .setLngLat([-122.6830589750817, 45.530101282930936])
-    .addTo(map);
+.setLngLat([-122.6830589750817, 45.530101282930936])
+.setPopup(new mapboxgl.Popup().setHTML("<h2>Mark's iphone service</h2>"))
+.addTo(map);
+ 
+console.log(marker.getPopup()); // return the popup instance
+
+
     
     // Add navigation control (the +/- zoom buttons)
     map.addControl(new mapboxgl.NavigationControl(), 'top-right');
