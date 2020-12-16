@@ -3,7 +3,7 @@ import mapboxgl from 'mapbox-gl';
 import './Map.css';
 
 mapboxgl.accessToken =
-  'pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4M29iazA2Z2gycXA4N2pmbDZmangifQ.-g_vE53SD2WrJ6tFX7QHmA';
+  'pk.eyJ1IjoiZGF2aWRuamFmZmUiLCJhIjoiY2tpanQzdzA3MDM1NjJ0cW1lMmVvdmUweiJ9.9znxRvwMbpk6SQKt0hxvUQ';
 
 const Map = () => {
   const mapContainerRef = useRef(null);
@@ -21,6 +21,12 @@ const Map = () => {
       zoom: 9
     });
 
+
+    // Add pins to map
+    var marker = new mapboxgl.Marker()
+    .setLngLat([-122.6830589750817, 45.530101282930936])
+    .addTo(map);
+    
     // Add navigation control (the +/- zoom buttons)
     map.addControl(new mapboxgl.NavigationControl(), 'top-right');
 
