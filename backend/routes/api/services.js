@@ -1,6 +1,6 @@
 const router = require("express").Router();
 const servicesController = require("../../controllers/servicesController");
-
+console.log("are you working?")
 // Matches with "/api/services"
 router.route("/")
   .get(servicesController.findAll)
@@ -11,6 +11,6 @@ router
   .route("/:id")
   .get(servicesController.findById)
   .put(servicesController.update)
-  .delete(servicesController.remove);
+  // .delete(servicesController.remove);
 
 module.exports = router;
