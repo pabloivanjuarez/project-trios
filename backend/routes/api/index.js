@@ -1,8 +1,7 @@
 const router = require("express").Router();
-const userRoutes = require("./users");
-const serviceRoutes = require("./serviceRoutes")
+const serviceRoutes = require("./services")
 
-// adds second parameter to url: '/api/users'
-router.use("/users", userRoutes);
+// adds second parameter to url: '/api/services'
+router.use("/services", serviceRoutes);
 
 module.exports = router;
