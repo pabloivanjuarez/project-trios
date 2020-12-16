@@ -37,8 +37,14 @@ footer {
   padding-top: 40px;
 }
 
+.reviewTitle {
+  text-align: center;
+  padding-top: 25px;
+}
+
 .review-cards.row {
   padding: 25px;
+  /* float: inherit; */
   text-align: center;
   align-content: center;
   margin-left: auto;
@@ -84,6 +90,6 @@ footer {
   padding: 5px 10px;
 }
 
-div {
+/* div {
   border: 1px solid red;
-}
+} */

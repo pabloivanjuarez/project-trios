@@ -4,8 +4,8 @@ import React from 'react'
 function Reviews() {
   return (
     <div className="reviews container-fluid text-center">
-      <div row>
-        <h2>Service Reviews</h2>
+      <div class="row">
+        <h2 class="reviewTitle">Service Reviews</h2>
       </div>
 
       
