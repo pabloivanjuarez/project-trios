@@ -3,7 +3,8 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Header from "./components/Header/index";
 import Footer from "./components/Footer/index";
 import Home from "./pages/Home";
-import Login from "./pages/Login"
+import Login from "./pages/Login";
+import Users from "./pages/Users";
 
 function App() {
   return (
@@ -20,6 +21,11 @@ function App() {
           {/* Login Page */}
           <Route path="/login">
             <Login />
+          </Route>
+
+          {/* Users Page */}
+          <Route path="/users">
+            <Users />
           </Route>
           
         </Switch>
