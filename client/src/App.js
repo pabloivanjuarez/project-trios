@@ -19,7 +19,6 @@ function App() {
           {/* Login Page */}
           <Route exact path="/login" component={Login} />
           
-
           {/* Users Page */}
           <Route exact path="/users" component={Users} />
         
