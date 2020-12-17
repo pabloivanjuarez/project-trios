@@ -1,11 +1,12 @@
 .map-container {
   
     position: relative;
-    padding: 200px;
+    padding: 150px;
   
   }
   
   .sidebarStyle {
+    visibility: hidden;
     display: inline-block;
     position: relative;
     top: 0;

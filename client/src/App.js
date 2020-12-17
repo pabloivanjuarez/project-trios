@@ -36,7 +36,7 @@ function App() {
         </Router>
       </div>
     </Container>
-  );
-};
+  )
+}
 
 export default App;
