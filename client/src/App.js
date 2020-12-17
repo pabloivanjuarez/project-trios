@@ -10,8 +10,8 @@ import Login from "./components/Login";
 import ForgotPassword from "./components/ForgotPassword";
 import Header from "./components/Header/index";
 import Jumbotron from "./components/Jumbotron/index";
-import Map from "./components/Map/index";
 import Services from "./components/Services/index";
+import Map from "./components/Map/index";
 import Footer from "./components/Footer/index";
 
 function App() {
@@ -20,7 +20,9 @@ function App() {
       className="d-flex align-items-center justify-content-center"
       style={{ minHeight: "100vh" }}
     >
-      <div className="w-100" style={{ maxWidth: "400px" }}>
+      <div className="w-100" 
+      // style={{ maxWidth: "400px" }}
+      >
         <Router>
           <AuthProvider>
             <Switch>
@@ -32,13 +34,6 @@ function App() {
             </Switch>
           </AuthProvider>
         </Router>
-      </div>
-      <div>
-        <Header />
-        <Jumbotron />
-        <Services />
-        <Map />
-        <Footer />
       </div>
     </Container>
   );
