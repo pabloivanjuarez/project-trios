@@ -19,7 +19,7 @@ function Header() {
                 <a className="nav-link active" aria-current="page" href="/">Home</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/login">Sign Up</a>
+                <a className="nav-link" href="/login">Log In</a>
               </li>
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="/users" id="navbarDropdown" role="button"
