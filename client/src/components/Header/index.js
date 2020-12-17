@@ -2,7 +2,7 @@ import React from 'react'
 
 function Header() {
   return (
-    <div class="nav">
+    <div className="nav">
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
           <a className="navbar-brand" href="/">Nerds Next Door</a>
@@ -26,7 +26,7 @@ function Header() {
                   data-bs-toggle="dropdown" aria-expanded="false">
                   Services
                         </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><a className="dropdown-item" href="#">Cell Phone</a></li>
                   <li><a className="dropdown-item" href="#">Tablet</a></li>
                   <li><a className="dropdown-item" href="#">Zoom/Skype</a></li>

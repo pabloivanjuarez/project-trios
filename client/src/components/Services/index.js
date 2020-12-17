@@ -10,22 +10,22 @@ function Services() {
 
         <div className="col">
           <img className="service" src="./Assets/images/cell_phone.svg" />
-          <div class="middle">
-            <div class="text">Mobile</div>
+          <div className="middle">
+            <div className="text">Mobile</div>
           </div>
         </div>
 
         <div className="col">
           <img className="service" src="./Assets/images/tablet-1.png" />
-          <div class="middle">
-            <div class="text">Tablet</div>
+          <div className="middle">
+            <div className="text">Tablet</div>
           </div>
         </div>
 
         <div className="col">
           <img className="service" src="./Assets/images/webconference.png" />
-          <div class="middle">
-            <div class="text">Zoom/Skype</div>
+          <div className="middle">
+            <div className="text">Zoom/Skype</div>
           </div>
         </div>
 
