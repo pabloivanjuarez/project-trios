@@ -5,6 +5,7 @@ import Footer from "./components/Footer/index";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Users from "./pages/Users";
+import Signup from "./pages/Signup"
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
           
           {/* Users Page */}
           <Route exact path="/users" component={Users} />
+
+          {/* Sign up Page */}
+          <Route exact path="/signup" component={Signup} />
 
 
         
