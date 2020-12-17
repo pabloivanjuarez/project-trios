@@ -14,20 +14,15 @@ function App() {
         <Switch>
 
           {/* Home Page */}
-          <Route path={["/", "/home"]}>
-            <Home />
-          </Route>
+          <Route exact path="/" component={Home} />
 
           {/* Login Page */}
-          <Route path="/login">
-            <Login />
-          </Route>
+          <Route exact path="/login" component={Login} />
+          
 
           {/* Users Page */}
-          <Route path="/users">
-            <Users />
-          </Route>
-          
+          <Route exact path="/users" component={Users} />
+        
         </Switch>
         <Footer />
     </Router>
