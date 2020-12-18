@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Nerds Next Door</title>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Nerds Next Door</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sign Up</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Cell Phone</a></li>
+                            <li><a class="dropdown-item" href="#">Tablet</a></li>
+                            <li><a class="dropdown-item" href="#">Zoom/Skype</a></li>
+                            <li><a class="dropdown-item" href="#">Wifi/Internet</a></li>
+                            <li><a class="dropdown-item" href="#">Computer</a></li>
+                            <li><a class="dropdown-item" href="#">Printer</a></li>
+                            <li><a class="dropdown-item" href="#">Other</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li> -->
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- END NAV BAR -->
+
+    <!-- JUMBOTRON -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="jumbotron">
+                <div class="user-jtron-image">
+
+                    <div class="jumbotext">
+                        <h1 class="jumbotext display-4 fw-normal">The Best Tech Help</h1>
+                        <p class="jumbotext">Right in your Neighborhood</p>
+                        <a class="btn btn-outline-primary" href="#">Coming soon</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END JUMBOTRON -->
+
+    <!-- USER DATA START  -->
+
+    <div class="container-fluid h-100">
+        <div class="row justify-content-center h-100">
+
+            <!-- LEFT SIDE -->
+
+            <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 hidden-md-down left">
+
+                <div class="row justify-content-center align-self-center">
+                    <img class="userPhoto" src="./images/7.jpg" class="img-fluid" />
+                </div>
+                <div class="userText">
+                    <h4 class="userName">James Simpson</h4>
+
+                    <h5 class="userSubtitle">Mobile and Desktop Support for the Greater Portland Area</h5>
+                    <img class="badgeImg" src="./images/cert_badge.png">
+                    <p>Nerds Next Door Certified!</p>
+                    <hr />
+                    <div class="servicesList container-fluid">
+                        <h5>Services Available:</h5>
+                        <ul id="servicesItems" class="list-group list-group-flush">
+                            <li id="mobile" class="list-group-item">Cell Phone/Mobile</li>
+                            <li id="tablet" class="list-group-item">Tablet</li>
+                            <li id="videoConf" class="list-group-item">Zoom/Skype</li>
+                            <li id="computer" class="list-group-item">Computer/Desktop Support</li>
+                            <li id="other" class="list-group-item">Malware Removal</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- RIGHT SIDE -->
+
+            <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8 right">
+
+                <div class="mapDiv">
+                    <img src="./images/600x300_map.png" class="serviceMap" alt="" />
+                </div>
+
+                <div class="mainSupportText">
+                    <p>
+                        Hi, I'm James Simpson, Portland transplant and computer enthusiast! I do desktop support for
+                        Hewlett Packard and I am CompTIA A+ and Network + certified.
+                    </p>
+                    <p>
+                        My rates are $100/min for the visit, $20/hr.
+                    </p>
+                    <p>
+                         I'd be happy to assist you with your technical issues!  Please, no over the phone support requests.
+                    </p>
+                </div>
+
+                <div class="card contactCard" style="width: 18rem;">
+                    <div class="card-header">
+                        Contact 
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">503-555-2345</li>
+                        <li class="list-group-item">jsimpson@hp.com</li>
+                        <li class="list-group-item">@jamessimpsonpdx</li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <!-- USER DATA END  -->
+
+
+    <footer>
+
+        Nerds Next Door
+    </footer>
+
+    <!-- BOOTSTRAP JAVASCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

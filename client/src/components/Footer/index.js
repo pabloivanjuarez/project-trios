@@ -5,7 +5,7 @@ function Footer() {
     <div>
       <footer>
 
-Nerds Next Door
+Nerds Next Door, &#169; 2021, Bearded Dev Dudes // This is a class project for a full-stack web development course.  
 </footer>
     </div>
   )

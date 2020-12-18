@@ -1,0 +1,12 @@
+.jtron-image {
+  height: 80vh;
+  background-image: url(./images/pexels-dana-tentis-370799.jpg);
+}
+
+.jumbotext {
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center;
+  padding: 25px;
+  color: white;
+}
