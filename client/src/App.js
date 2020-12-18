@@ -12,14 +12,13 @@ import Header from "./components/Header/index";
 
 function App() {
   return (
-    <>
+    <Router>
     <Header />
     <Container
       className="d-flex align-items-center justify-content-center"
       style={{ minHeight: "100vh" }}
     >
       <div>
-        <Router>
           <AuthProvider>
             <Switch>
               <PrivateRoute path="/dashboard" component={Dashboard} />
@@ -29,10 +28,9 @@ function App() {
               <Route path="/forgot-password" component={ForgotPassword} />
             </Switch>
           </AuthProvider>
-        </Router>
       </div>
     </Container>
-    </>
+    </Router>
   )
 };
 
