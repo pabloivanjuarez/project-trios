@@ -45,6 +45,14 @@
   .mapboxgl-popup-content p {
     margin: 0;
     display: block;
-    padding: 10px;
+    padding-bottom: 0px;
     font-weight: 400;
   }
+
+  .mapboxgl-popup-content a {
+    margin: 0;
+    display: block;
+    padding-bottom: 5px;
+    font-weight: 400;
+  }
+ 

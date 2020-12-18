@@ -30,8 +30,10 @@ const Map = () => {
 
     var marker = new mapboxgl.Marker()
 .setLngLat([-122.6830589750817, 45.530101282930936])
-.setPopup(new mapboxgl.Popup().setHTML("<h5>iPhone service</h5>" + "<p>More Details Here</p>" + "<p>503-555-5555</p>"))
+// eslint-disable-next-line
+.setPopup(new mapboxgl.Popup().setHTML("<h5>iPhone service</h5>" + "<p>More Details Here</p>" + "<p>503-555-5555</p>" + "<a href=#>VIEW MORE DETAILS</a>"))
 .addTo(map);
+
  
 console.log(marker.getPopup()); // return the popup instance
 
