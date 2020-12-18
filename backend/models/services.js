@@ -7,6 +7,12 @@ const servicesSchema = new Schema({
     phone: { type: Number, required: true },
     hourly: { type: Number, required: true },
     distance: { type: Number, required: true },
+    houseNumber: { type: Number, required: true },
+    street: { type: String, required: true },
+    city: { type: String, required: true },
+    state: { type: String, required: true },
+    zip: { type: Number, required: true },
+    
 });
 
 const Services = mongoose.model("Services", servicesSchema);

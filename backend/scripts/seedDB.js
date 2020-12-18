@@ -14,7 +14,12 @@ const servicesSeed = [
     service: "Computer Repair",
     phone: 555-555-5555,
     hourly: 29,
-    distance: 2.6
+    distance: 2.6,
+    houseNumber: 2823,
+    street: "Ne Tillamook",
+    city: "Portland",
+    state: "Oregon",
+    zip: 97212
   },
   {
     name: "Sam Smith",
