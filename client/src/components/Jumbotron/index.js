@@ -3,8 +3,8 @@ import React from 'react'
 
 function Jumbotron() {
   return (
-    <div className="container-fluid">
-      <div className="row">
+    // <div className="container-fluid">
+    //   <div className="row">
         <div className="jumbotron">
           <div className="jtron-image">
             <div className="jumbotext">
@@ -14,8 +14,8 @@ function Jumbotron() {
             </div>
           </div>
         </div>
-      </div>
-    </div>
+    //   </div>
+    // </div>
   )
 }
 
