@@ -90,6 +90,10 @@ footer {
   padding: 5px 10px;
 }
 
+.badgeImg {
+  width: 30px;
+}
+
 /* div {
   border: 1px solid red;
 } */
