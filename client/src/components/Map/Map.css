@@ -18,3 +18,41 @@
     padding: 6px;
     font-weight: bold;
   }
+
+  .mapboxgl-popup-content{
+  text-align: center; 
+  padding: 0;
+  width: 200px;
+    
+  }
+
+  .mapboxgl-popup-close-button {
+    
+    display: none;
+  }
+
+  .mapboxgl-popup-content h5 {
+    background: #0F416E;
+    color: #fff;
+    margin: 0;
+    display: block;
+    padding: 10px;
+    border-radius: 3px 3px 0 0;
+    font-weight: 700;
+    margin-top: -15px;
+  }
+
+  .mapboxgl-popup-content p {
+    margin: 0;
+    display: block;
+    padding-bottom: 0px;
+    font-weight: 400;
+  }
+
+  .mapboxgl-popup-content a {
+    margin: 0;
+    display: block;
+    padding-bottom: 5px;
+    font-weight: 400;
+  }
+ 
