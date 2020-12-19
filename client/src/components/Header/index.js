@@ -4,7 +4,7 @@ import "./style.css"
 // import Login from "../Modal"
 
 function Header() {
-  
+
   return (
     <nav className="navbar navbar-expand-lg navbar-light sticky-top">
       <div className="container-fluid">
