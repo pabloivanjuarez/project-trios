@@ -11,6 +11,7 @@ import UpdateProfile from "./components/UpdateProfile";
 import Header from "./components/Header/index";
 import Home from "./pages/Home"
 
+
 function App() {
   return (
     <Router>
@@ -32,6 +33,7 @@ function App() {
           </AuthProvider>
       </div>
     {/* </Container> */}
+
     </Router>
   )
 };
