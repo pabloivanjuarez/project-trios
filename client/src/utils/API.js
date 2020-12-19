@@ -22,3 +22,5 @@ export default {
         axios.delete(`/api/services/${id}`)
     }
 }
+
+
