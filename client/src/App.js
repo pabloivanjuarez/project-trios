@@ -2,15 +2,19 @@ import React from "react";
 // import { Container } from "react-bootstrap";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { AuthProvider } from "./contexts/AuthContext";
+// Pages (current total: 8)
+import Dashboard from "./pages/Dashboard";
+import ForgotPassword from "./pages/ForgotPassword";
+import UpdateProfile from "./pages/UpdateProfile";
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
+import Users from "./pages/Users";
+import NewUser from "./pages/NewUser";
+// Components
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 import PrivateRoute from "./components/PrivateRoute";
-import Dashboard from "./components/Dashboard";
-import Signup from "./components/Signup";
-import Login from "./components/Login";
-import ForgotPassword from "./components/ForgotPassword";
-import UpdateProfile from "./components/UpdateProfile";
-import Header from "./components/Header/index";
-import Home from "./pages/Home"
-
 
 function App() {
   return (
@@ -21,19 +25,52 @@ function App() {
       style={{ minHeight: "100vh" }} */}
     
       <div>
+        <Switch>
+
+          {/* Home Page */}
+          <Route exact path={["/", "/home"]}>
+            <Home />
+          </Route>
+
+          {/* Account creation Page */}
+          <Route path="/signup">
+            <Signup />
+          </Route>
+
+          {/* Login Page */}
+          <Route exact path="/login">
+            <Login />
+          </Route>
+
+          {/*Routes Below can only be accessed if user is logged in
+          ---------------------------------------------------------*/}
           <AuthProvider>
-            <Switch>
-              <PrivateRoute path="/dashboard" component={Dashboard} />
-              <PrivateRoute path="/update-profile" component={UpdateProfile} />
-              <Route exact path="/" component={Home} />
-              <Route exact path="/login" component={Login} />
-              <Route path="/signup" component={Signup} />
-              <Route path="/forgot-password" component={ForgotPassword} />
-            </Switch>
+            {/* New user services creation Page */}
+            <PrivateRoute path="/new-user">
+              <NewUser />
+            </PrivateRoute>
+            {/* Forgot password Page */}
+            <PrivateRoute path="/forgot-password">
+              <ForgotPassword />
+            </PrivateRoute>
+            {/* Update Profile Page !User login required! */}              
+            <PrivateRoute path="/update-profile">
+              <UpdateProfile />
+            </PrivateRoute>            
+            {/* Dashboard Page !User login required! */}
+            <PrivateRoute path="/dashboard">
+              <Dashboard />
+            </PrivateRoute>
+            {/* All Users catalog Page */}
+            <PrivateRoute path="/users">
+              <Users />
+            </PrivateRoute>
           </AuthProvider>
+          {/* ----------------------------------------------------- */}
+        </Switch>
       </div>
     {/* </Container> */}
-
+    <Footer />
     </Router>
   )
 };
