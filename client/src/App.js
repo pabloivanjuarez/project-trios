@@ -10,6 +10,7 @@ import ForgotPassword from "./components/ForgotPassword";
 import UpdateProfile from "./components/UpdateProfile";
 import Header from "./components/Header/index";
 import Home from "./pages/Home"
+import Newuser from "./pages/Newuser"
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
               <Route exact path="/login" component={Login} />
               <Route path="/signup" component={Signup} />
               <Route path="/forgot-password" component={ForgotPassword} />
+              <Route path="/Newuser" component={Newuser} />
             </Switch>
           </AuthProvider>
       </div>

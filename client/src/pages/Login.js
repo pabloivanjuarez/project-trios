@@ -7,7 +7,7 @@ import Login from '../components/Login'
 function Loginn() {
   return (
     <div>
-      <Jumbotron />
+      {/* <Jumbotron /> */}
       <Login />
     </div>
   )
