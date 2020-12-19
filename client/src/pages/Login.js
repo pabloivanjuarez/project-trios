@@ -1,16 +1,16 @@
 import React from 'react';
 import API from '../utils/API';
 import Jumbotron from "../components/Jumbotron/index"
-import Signup from '../components/Signup';
+import Login from '../components/Login'
 
 
-function Login() {
+function Loginn() {
   return (
     <div>
       <Jumbotron />
-      <Signup />
+      <Login />
     </div>
   )
 }
 
-export default Login
+export default Loginn
