@@ -16,7 +16,6 @@ function Home() {
       <Services />
       <Map />
       <Reviews />
-      <Footer />
     </div>
   )
 }
