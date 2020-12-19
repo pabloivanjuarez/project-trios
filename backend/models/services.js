@@ -13,6 +13,7 @@ const servicesSchema = new Schema({
     state: { type: String, required: true },
     zip: { type: Number, required: true },
     
+    
 });
 
 const Services = mongoose.model("Services", servicesSchema);
