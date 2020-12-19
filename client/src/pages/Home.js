@@ -5,6 +5,7 @@ import Subtitle from "../components/Subtitle/index"
 import Services from "../components/Services/index"
 import Map from "../components/Map/index"
 import Reviews from "../components/Reviews/index"
+import Footer from "../components/Footer/index"
 
 
 function Home() {
@@ -15,6 +16,7 @@ function Home() {
       <Services />
       <Map />
       <Reviews />
+      <Footer />
     </div>
   )
 }
