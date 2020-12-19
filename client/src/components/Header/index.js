@@ -1,13 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Login from "../Modal"
+import "./style.css"
+// import Login from "../Modal"
 
 function Header() {
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg navbar-light sticky-top">
       <div className="container-fluid">
-        <a className="navbar-brand" href="/">Nerds Next Door</a>
+        <Link className="navbar-brand" to="/">Nerds Next Door</Link>
 
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -16,28 +17,27 @@ function Header() {
         </button>
 
 
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <div className="collapse navbar-collapse navItems" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="/">Home</a>
+              <Link className="nav-link active item" aria-current="page" to="/dashboard">Home</Link>
             </li>
-            <li className="nav-item">
-              {/* <a className="nav-link" href="/login">Sign Up</a> */}
-              {/* <Link to="/signup">Sign Up</Link> */}
-            </li>
+            {/* <li className="nav-item">
+              <a className="nav-link" href="/login">Sign Up</a>
+              <Link to="/signup">Sign Up</Link>
+            </li> */}
             <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" href="/services" id="navbarDropdown" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
+              <a className="nav-link dropdown-toggle item" href=" " id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Services
-                      </a>
+              </a>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a className="dropdown-item" href="#">Cell Phone</a></li>
-                <li><a className="dropdown-item" href="#">Tablet</a></li>
-                <li><a className="dropdown-item" href="#">Zoom/Skype</a></li>
-                <li><a className="dropdown-item" href="#">Wifi/Internet</a></li>
-                <li><a className="dropdown-item" href="#">Computer</a></li>
-                <li><a className="dropdown-item" href="#">Printer</a></li>
-                <li><a className="dropdown-item" href="#">Other</a></li>
+                <li><Link className="dropdown-item" to="/">Cell Phone</Link></li>
+                <li><Link className="dropdown-item" to="/">Tablet</Link></li>
+                <li><Link className="dropdown-item" to="/">Zoom/Skype</Link></li>
+                <li><Link className="dropdown-item" to="/">Wifi/Internet</Link></li>
+                <li><Link className="dropdown-item" to="/">Computer</Link></li>
+                <li><Link className="dropdown-item" to="/">Printer</Link></li>
+                <li><Link className="dropdown-item" to="/">Other</Link></li>
               </ul>
             </li>
 

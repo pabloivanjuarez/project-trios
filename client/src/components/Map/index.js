@@ -2,6 +2,7 @@ import React, { useRef, useEffect, useState } from 'react';
 import mapboxgl from 'mapbox-gl';
 import './Map.css';
 
+
 mapboxgl.accessToken =
   'pk.eyJ1IjoiZGF2aWRuamFmZmUiLCJhIjoiY2tpanQzdzA3MDM1NjJ0cW1lMmVvdmUweiJ9.9znxRvwMbpk6SQKt0hxvUQ';
 
@@ -29,8 +30,10 @@ const Map = () => {
 
     var marker = new mapboxgl.Marker()
 .setLngLat([-122.6830589750817, 45.530101282930936])
-.setPopup(new mapboxgl.Popup().setHTML("<h2>Mark's iphone service</h2>"))
+// eslint-disable-next-line
+.setPopup(new mapboxgl.Popup().setHTML("<h5>iPhone service</h5>" + "<p>More Details Here</p>" + "<p>503-555-5555</p>" + "<a href=#>VIEW MORE DETAILS</a>"))
 .addTo(map);
+
  
 console.log(marker.getPopup()); // return the popup instance
 
