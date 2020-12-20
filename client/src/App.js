@@ -1,5 +1,4 @@
 import React from "react";
-// import { Container } from "react-bootstrap";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { AuthProvider } from "./contexts/AuthContext";
 // Pages (current total: 8)
@@ -20,10 +19,6 @@ function App() {
   return (
     <Router>
     <Header />
-    {/* <Container
-      className="d-flex align-items-center justify-content-center"
-      style={{ minHeight: "100vh" }} */}
-    
       <div>
         <Switch>
 
@@ -69,7 +64,6 @@ function App() {
           {/* ----------------------------------------------------- */}
         </Switch>
       </div>
-    {/* </Container> */}
     <Footer />
     </Router>
   )
