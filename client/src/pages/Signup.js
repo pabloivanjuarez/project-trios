@@ -1,12 +1,12 @@
 import React from 'react';
 import API from '../utils/API';
-import Newuser from "../components/Newuser/index"
+import Signup from "../components/Signup"
 
 
 function Users() {
   return (
     <div>
-        <Newuser />
+        <Signup />
     </div>
   )
 }

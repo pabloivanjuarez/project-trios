@@ -4,7 +4,7 @@ import Jumbotron from "../components/Jumbotron/index"
 import Login from '../components/Login'
 
 
-function Loginn() {
+function LoginPage() {
   return (
     <div>
       {/* <Jumbotron /> */}
@@ -13,4 +13,4 @@ function Loginn() {
   )
 }
 
-export default Loginn
+export default LoginPage

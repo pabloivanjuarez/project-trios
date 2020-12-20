@@ -1,27 +1,58 @@
-import React from 'react'
-import { Card, Button } from "react-bootstrap"
+import React, { useRef, useState } from "react"
+import { Form, Button, Card, Alert } from "react-bootstrap"
+import { useAuth } from "../../contexts/AuthContext"
+import { Link, useHistory } from "react-router-dom"
 
+export default function Login() {
+  const emailRef = useRef()
+  const passwordRef = useRef()
+  const { login } = useAuth()
+  const [error, setError] = useState("")
+  const [loading, setLoading] = useState(false)
+  const history = useHistory()
 
-function Login() {
+  async function handleSubmit(e) {
+    e.preventDefault()
+
+    try {
+      setError("")
+      setLoading(true)
+      await login(emailRef.current.value, passwordRef.current.value)
+      history.push("/dashboard")
+    } catch {
+      setError("Failed to log in")
+    }
+
+    setLoading(false)
+  }
+
   return (
-
-    <div className="container-fluid">
-
-
+    <div style={{ width: "400px" }}>
       <Card>
-        <Card.Header>Log In/Sign Up</Card.Header>
         <Card.Body>
-          <Card.Title>Do You Have Tech Services to Offer?</Card.Title>
-          <Card.Text>
-            Are you already a Nerds Next Door Member?  Click below!
-    </Card.Text>
-          <Button id="logIn" variant="primary">Log In</Button>
-          <Button id="signUp" variant="secondary">Sign Up</Button>
+          <h2 className="text-center mb-4">Log In</h2>
+          {error && <Alert variant="danger">{error}</Alert>}
+          <Form onSubmit={handleSubmit}>
+            <Form.Group id="email">
+              <Form.Label>Email</Form.Label>
+              <Form.Control type="email" ref={emailRef} required />
+            </Form.Group>
+            <Form.Group id="password">
+              <Form.Label>Password</Form.Label>
+              <Form.Control type="password" ref={passwordRef} required />
+            </Form.Group>
+            <Button disabled={loading} className="w-100" type="submit">
+              Log In
+            </Button>
+          </Form>
+          <div className="w-100 text-center mt-3">
+            <Link to="/forgot-password">Forgot Password?</Link>
+          </div>
         </Card.Body>
       </Card>
-
+      <div className="w-100 text-center mt-2">
+        Need an account? <Link to="/signup">Sign Up</Link>
+      </div>
     </div>
   )
 }
-
-export default Login
