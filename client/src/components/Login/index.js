@@ -11,8 +11,6 @@ export default function Login() {
   const emailRef = useRef();
   const passwordRef = useRef();
 
-  console.log(login);
-
   async function handleSubmit(event) {
     event.preventDefault();
 

@@ -65,7 +65,10 @@ function App() {
             </PrivateRoute>
 
           </Switch>
-        </div> 
+        </div>
+        <br />
+        <br />
+        <br />
         <Footer />
       </AuthProvider>
     </Router>

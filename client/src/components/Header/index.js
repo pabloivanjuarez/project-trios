@@ -6,10 +6,8 @@ import "./style.css";
 
 function Header() {
   const [error, setError] = useState("");
-  const { logout } = useAuth();
+  const { currentUser, logout } = useAuth();
   const history = useHistory();
-
-  console.log(logout);
 
   async function handleLogout() {
     setError("");
@@ -45,12 +43,19 @@ function Header() {
           <FormControl type="text" placeholder="Search" className="mr-sm-2" />
           <Button variant="outline-success">Search</Button>
         </Form>
-        <Nav className="ml-auto">
-          {/* <strong>Email:</strong> {currentUser.email} */}
-          <Nav.Link href="/signup">Sign Up</Nav.Link>
-          <Nav.Link href="/login">Log In</Nav.Link>
-          <Nav.Link onClick={handleLogout}>Log Out</Nav.Link>
-        </Nav>
+          {currentUser === null ? (
+            <Nav className="ml-auto">
+              <Nav.Link href="/signup">Sign Up</Nav.Link>
+              <Nav.Link href="/login">Log In</Nav.Link>
+            </Nav>
+          ):(
+            <Nav className="ml-auto">
+              <Nav.Link onClick={handleLogout}>Log Out</Nav.Link>
+              <Navbar.Text>
+                <strong>Email:</strong> {currentUser.email}
+              </Navbar.Text>
+            </Nav>)
+          }
       </Navbar.Collapse>
     </Navbar>
     </>
