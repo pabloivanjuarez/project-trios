@@ -100,13 +100,14 @@ col:hover .text {
 }
 
 .new-user-title {
-  text-align: center;
+  /* text-align: center; */
   margin-left: auto;
   margin-right: auto;
 }
 
 .new-user-form {
-  text-align: center;
+  /* visibility: hidden; */
+  /* text-align: center; */
   margin-left: auto;
   margin-right: auto;
 }

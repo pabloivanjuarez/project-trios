@@ -6,14 +6,17 @@ function Newuser() {
   return (
 
     <div className="container-fluid">
-      <div className="row col-sm-12 col-md-8 col-lg-12 align-center">
+
+      <div className="row col-sm-12 col-md-8 col-lg-12 align-items-center">
 
         <div className="new-user-title">
           <h1>Sign Up with Nerds Next Door</h1>
         </div>
+
       </div>
 
-      <div className="row col-sm-12 col-md-8 col-lg-12 align-center">
+      <div className="row col-sm-12 col-md-12 col-lg-12 align-items-center">
+        <div className="new-user-form align-center">
         <Form>
 
           <Form.Group controlId="formBasicEmail">
@@ -99,6 +102,7 @@ function Newuser() {
 
 
         </Form>
+        </div>
       </div>
     </div>
 
