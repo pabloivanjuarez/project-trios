@@ -39,6 +39,7 @@ footer {
 }
 
 .reviewTitle {
+  /* visibility: hidden; */
   text-align: center;
   padding-top: 25px;
 }
@@ -46,8 +47,8 @@ footer {
 .review-cards.row {
   padding: 25px;
   /* float: inherit; */
-  text-align: center;
-  align-content: center;
+  /* text-align: center; */
+  /* align-content: center; */
   margin-left: auto;
   margin-right: auto;
 }
@@ -55,6 +56,7 @@ footer {
   width: 18rem;
 }
 
+/* SERVICE ICON STYLING */
 .service {
   opacity: 1;
   display: block;
@@ -112,6 +114,6 @@ col:hover .text {
   margin-right: auto;
 }
 
-/* div {
+div {
   border: 1px solid red;
-} */
+}
