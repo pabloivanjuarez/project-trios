@@ -126,3 +126,11 @@ col:hover .text {
 div {
   border: 1px solid red;
 }
+
+/* Review div */
+
+#review-div{
+  color:blue !important;
+  align-content: center;
+  
+}
