@@ -38,23 +38,34 @@ footer {
   padding-top: 40px;
 }
 
-.reviewTitle {
+.title-row {
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
   padding-top: 25px;
 }
 
-.review-cards.row {
-  padding: 25px;
-  /* float: inherit; */
+.serviceTitle {
   text-align: center;
-  align-content: center;
-  margin-left: auto;
-  margin-right: auto;
+  float: right;
+  /* visibility: hidden; */
+}
+
+.reviews-row {
+  /* visibility: hidden; */
+  /* align-items: center; */
+  /* align-content: center; */
+  text-align: center;
+  padding: 25px;
+  margin: auto;
+  /* margin-right: auto; */
 }
 .review-card {
   width: 18rem;
 }
 
+/* SERVICE ICON STYLING */
 .service {
   opacity: 1;
   display: block;
@@ -112,6 +123,14 @@ col:hover .text {
   margin-right: auto;
 }
 
-/* div {
+div {
   border: 1px solid red;
-} */
+}
+
+/* Review div */
+
+#review-div{
+  color:blue !important;
+  align-content: center;
+  
+}
