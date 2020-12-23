@@ -3,14 +3,15 @@ import React from 'react'
 
 function Reviews() {
   return (
-    <div className="reviews container-fluid text-center">
-      <div className="row">
-        <h2 className="reviewTitle">Service Reviews</h2>
+    <div className="container-fluid">
+      
+      <div className="row title-row align-center col-lg-12 col-sm-12">
+        <h2 className="serviceTitle">Service Reviews</h2>
       </div>
 
       
 
-        <div className="review-cards row">
+        <div className="row v-100 reviews-row">
          
           <div className="review-card">
             <div className="card-body">
@@ -22,7 +23,7 @@ function Reviews() {
             </div>
           </div>
 
-          <div className="review-card text-center">
+          <div className="review-card">
             <div className="card-body">
               <h5 className="card-title">Fixed my Computer, broke my WiFi</h5>
               <h6 className="card-subtitle mb-2 text-muted">Gus from Springfield</h6>

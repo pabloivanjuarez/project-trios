@@ -38,19 +38,28 @@ footer {
   padding-top: 40px;
 }
 
-.reviewTitle {
-  /* visibility: hidden; */
+.title-row {
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
   padding-top: 25px;
 }
 
-.review-cards.row {
-  padding: 25px;
-  /* float: inherit; */
-  /* text-align: center; */
+.serviceTitle {
+  text-align: center;
+  float: right;
+  /* visibility: hidden; */
+}
+
+.reviews-row {
+  /* visibility: hidden; */
+  /* align-items: center; */
   /* align-content: center; */
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
+  padding: 25px;
+  margin: auto;
+  /* margin-right: auto; */
 }
 .review-card {
   width: 18rem;
