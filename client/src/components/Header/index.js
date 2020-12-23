@@ -1,56 +1,65 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "./style.css"
-// import Login from "../Modal"
+import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
+import { Nav, Navbar, NavDropdown, Form, FormControl, Button, Alert } from "react-bootstrap";
+import { useAuth } from "../../contexts/AuthContext";
+import "./style.css";
 
 function Header() {
+  const [error, setError] = useState("");
+  const { currentUser, logout } = useAuth();
+  const history = useHistory();
+
+  async function handleLogout() {
+    setError("");
+
+    try {
+      await logout();
+      history.push("/login");
+    } catch {
+      setError("Failed to log out");
+    }
+  };
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light sticky-top">
-      <div className="container-fluid">
-        <Link className="navbar-brand" to="/">Nerds Next Door</Link>
-
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-
-
-
-        <div className="collapse navbar-collapse navItems" id="navbarSupportedContent">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <li className="nav-item">
-              <Link className="nav-link active item" aria-current="page" to="/dashboard">Home</Link>
-            </li>
-            {/* <li className="nav-item">
-              <a className="nav-link" href="/login">Sign Up</a>
-              <Link to="/signup">Sign Up</Link>
-            </li> */}
-            <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle item" href=" " id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Services
-              </a>
-              <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><Link className="dropdown-item" to="/">Cell Phone</Link></li>
-                <li><Link className="dropdown-item" to="/">Tablet</Link></li>
-                <li><Link className="dropdown-item" to="/">Zoom/Skype</Link></li>
-                <li><Link className="dropdown-item" to="/">Wifi/Internet</Link></li>
-                <li><Link className="dropdown-item" to="/">Computer</Link></li>
-                <li><Link className="dropdown-item" to="/">Printer</Link></li>
-                <li><Link className="dropdown-item" to="/">Other</Link></li>
-              </ul>
-            </li>
-
-          </ul>
-          {/* <form className="d-flex">
-            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button className="btn btn-outline-success" type="submit">Search</button>
-              </form> */}
-        </div>
-      </div>
-    </nav>
+    <>
+    <Navbar bg="light" expand="lg">
+      {error && <Alert variant="danger">{error}</Alert>}
+      <Navbar.Brand className="font-weight-bold" href="/">Nerds Next Door</Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="mr-auto">
+        <NavDropdown title="Services" id="basic-nav-dropdown">
+            <NavDropdown.Item href="/">Cell Phone</NavDropdown.Item>
+            <NavDropdown.Item href="/">Tablet</NavDropdown.Item>
+            <NavDropdown.Item href="/">Zoom/Skype</NavDropdown.Item>
+            <NavDropdown.Item href="/">Wifi/Internet</NavDropdown.Item>
+            <NavDropdown.Item href="/">Computer</NavDropdown.Item>
+            <NavDropdown.Item href="/">Printer</NavDropdown.Item>            
+            <NavDropdown.Divider />
+            <NavDropdown.Item href="/">Other</NavDropdown.Item>
+          </NavDropdown>
+        </Nav>
+        <Form inline>
+          <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+          <Button variant="outline-success">Search</Button>
+        </Form>
+          {currentUser === null ? (
+            <Nav className="ml-auto">
+              <Nav.Link href="/signup">Sign Up</Nav.Link>
+              <Nav.Link href="/login">Log In</Nav.Link>
+            </Nav>
+          ):(
+            <Nav className="ml-auto">
+              <Nav.Link onClick={handleLogout}>Log Out</Nav.Link>
+              <Navbar.Text>
+                <strong>Email:</strong> {currentUser.email}
+              </Navbar.Text>
+            </Nav>)
+          }
+      </Navbar.Collapse>
+    </Navbar>
+    </>
   )
-}
+};
 
 export default Header;
