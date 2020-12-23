@@ -99,6 +99,18 @@ col:hover .text {
   width: 30px;
 }
 
-/* div {
+.new-user-title {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.new-user-form {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div {
   border: 1px solid red;
-} */
+}
