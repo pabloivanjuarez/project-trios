@@ -11,6 +11,7 @@ mongoose.connect(
 const servicesSeed = [
   {
     name: "Paul The Computer Guy",
+    email: "user123@123.com",
     service: "Computer Repair",
     phone: 555-555-5555,
     hourly: 29,
