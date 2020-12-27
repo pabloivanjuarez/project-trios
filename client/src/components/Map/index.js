@@ -32,7 +32,7 @@ mapboxgl.accessToken =
   // };
   // console.log(Services);
   
-console.log(Data + "hello?");
+// console.log(Data + "hello?");
 
 
   

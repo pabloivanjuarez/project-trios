@@ -28,7 +28,7 @@ function Header() {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
-        <NavDropdown title="Services" id="basic-nav-dropdown">
+          <NavDropdown title="Services" id="basic-nav-dropdown">
             <NavDropdown.Item href="/">Cell Phone</NavDropdown.Item>
             <NavDropdown.Item href="/">Tablet</NavDropdown.Item>
             <NavDropdown.Item href="/">Zoom/Skype</NavDropdown.Item>
@@ -38,6 +38,7 @@ function Header() {
             <NavDropdown.Divider />
             <NavDropdown.Item href="/">Other</NavDropdown.Item>
           </NavDropdown>
+          <Nav.Link href="/users">Service Workers</Nav.Link>
         </Nav>
         <Form inline>
           <FormControl type="text" placeholder="Search" className="mr-sm-2" />
