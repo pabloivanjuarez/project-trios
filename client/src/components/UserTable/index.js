@@ -1,8 +1,8 @@
 import React from 'react'
-import { Table, Col, Row } from "react-bootstrap";
+import { Table } from "react-bootstrap";
 
 
-function UserTable() {
+function UserTable(props) {
   return (
     <div className="container-fluid">
       <Table className="table">
@@ -15,55 +15,29 @@ function UserTable() {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <th scope="row">
-              <img className="tablePhoto" src="./Assets/images/7.jpg" alt="user"/>
-            </th>
-            <td>James Simpson</td>
-            <td>Mobile and Desktop Support for the Greater Portland Area</td>
-            <td>
-              <img className="badgeImg" src="./Assets/images/cert_badge.png" alt="user"/>
-            </td>
-          </tr>
-            <tr>
-              <th scope="row">
-                <img className="tablePhoto" src="./Assets/images/30.jpg" alt="user"/>
-              </th>
-              <td>Eric Jones</td>
-              <td>Video Conferencing Expertise!
-            </td>
-              <td>
-                <img className="badgeImg" src="./Assets/images/cert_badge.png" alt="user"/>
-              </td>
-          </tr>
-              <tr>
+          {
+            props 
+            ?
+            props.data.map(user => (
+              <tr key={user._id}>
                 <th scope="row">
-                  <img className="tablePhoto" src="./Assets/images/43.jpg" alt="user"/>
-              </th>
-                <td>Carter Townsend</td>
-                <td>Computer Savvy PSU Student</td>
-                <td></td>
-              </tr>
-              <tr>
-                <th scope="row">
-                  <img className="tablePhoto" src="./Assets/images/76.jpg" alt="user"/>
+                  {/********************************************************** 
+                  *For when we have images imported from the user
+                  ************************************************************
+                  <img className="tablePhoto" src={user.userImg} alt="user"/> 
+                  ************************************************************/}
+                  <img className="tablePhoto" src='./Assets/images/7.jpg' alt='user'></img>
                 </th>
-                <td>Natalie Miller</td>
-                <td>Network Security for Your Home or Office</td>
+                <td>{user.name}</td>
+                <td>{user.service}</td>
                 <td>
                   <img className="badgeImg" src="./Assets/images/cert_badge.png" alt="user"/>
                 </td>
-          </tr>
-                <tr>
-                  <th scope="row">
-                    <img className="tablePhoto" src="./Assets/images/80.jpg" alt="user"/>
-                  </th>
-                  <td>Alyssa Burke
-            </td>
-                  <td>IT/CS Student Looking to Help Out
-            </td>
-                  <td></td>
-                </tr>
+              </tr>
+            ))
+            :
+            <h1>Loading...</h1>
+          }
         </tbody>
       </Table>
     </div>
