@@ -11,6 +11,7 @@ import Signup from "./pages/Signup";
 import Users from "./pages/Users";
 import NewUser from "./pages/NewUser";
 import Reviews from "./pages/Reviews";
+import Services from "./pages/Services";
 // Components
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -69,6 +70,11 @@ function App() {
               {/* Customer Reviews */}
               <PrivateRoute path="/reviews">
               <Reviews />
+            </PrivateRoute>
+
+            {/* List of Services and Service Providers available */}
+            <PrivateRoute path="/services">
+              <Services />
             </PrivateRoute>
 
           </Switch>

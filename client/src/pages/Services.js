@@ -17,8 +17,8 @@ function Users() {
   return (
     <div>
       <Jumbotron />
-      <h2>Roster</h2>
-      <UserTable data={users} />
+      <h2>Services</h2>
+      {/* <UserTable data={users} /> */}
     </div>
   )
 }

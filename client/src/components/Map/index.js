@@ -1,10 +1,38 @@
 import React, { useRef, useEffect, useState } from 'react';
 import mapboxgl from 'mapbox-gl';
 import './Map.css';
+import Data from "./data"
+// import API from "../../utils/API";
 
 
 mapboxgl.accessToken =
   'pk.eyJ1IjoiZGF2aWRuamFmZmUiLCJhIjoiY2tpanQzdzA3MDM1NjJ0cW1lMmVvdmUweiJ9.9znxRvwMbpk6SQKt0hxvUQ';
+
+   
+  
+  //bringing in data
+  // function Services() {
+  //  const [services, setServices] = useState([])
+
+  //  useEffect(() => {
+  //    getServices()
+  //  },)
+
+  //  function getServices() {
+  //    API.get()
+  //      .then(res => 
+  //        setServices(res.data)
+  //      )
+  //      .catch(err => console.log(err));
+  //      console.log(services)
+  //  };
+
+   
+
+  // };
+  // console.log(Services);
+  
+// console.log(Data + "hello?");
 
 
   
@@ -23,6 +51,9 @@ const Map = () => {
       center: [-122.5123, 45.5557],
       zoom: 9
     });
+
+
+ 
 
     //GeoJSON file
 
