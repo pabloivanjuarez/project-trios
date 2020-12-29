@@ -23,11 +23,11 @@ function ServicesList(props) {
     <Table className="table">
       <thead>
         {/* cell phone support  */}
-        <tr><th id="phone">Cell Phone Support</th></tr>
+        <tr>
+          <th id="phone">Cell Phone Support</th></tr>
         <tr>
 
-          <th scope="col">{services.name} or {services.phone}</th>
-
+          
           <th scope="col">Albert Banks</th>
           <th scope="col">I Can help with your cell phone issue</th>
           <th scope="col"></th>
