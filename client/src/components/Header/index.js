@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import { Nav, Navbar, NavDropdown, Form, FormControl, Button, Alert } from "react-bootstrap";
 import { useAuth } from "../../contexts/AuthContext";
+import { HashLink as Link } from 'react-router-hash-link';
 import "./style.css";
 
 function Header() {
@@ -29,14 +30,14 @@ function Header() {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
           <NavDropdown title="Services" id="basic-nav-dropdown">
-            <NavDropdown.Item href="/">Cell Phone</NavDropdown.Item>
-            <NavDropdown.Item href="/">Tablet</NavDropdown.Item>
-            <NavDropdown.Item href="/">Zoom/Skype</NavDropdown.Item>
-            <NavDropdown.Item href="/">Wifi/Internet</NavDropdown.Item>
-            <NavDropdown.Item href="/">Computer</NavDropdown.Item>
-            <NavDropdown.Item href="/">Printer</NavDropdown.Item>            
+            <NavDropdown.Item href="/services#phone">Cell Phone</NavDropdown.Item>
+            <NavDropdown.Item href="/services#tablet">Tablet</NavDropdown.Item>
+            <NavDropdown.Item href="/services#zoom">Zoom/Skype</NavDropdown.Item>
+            <NavDropdown.Item href="/services#wifi">Wifi/Internet</NavDropdown.Item>
+            <NavDropdown.Item href="/services#computer">Computer</NavDropdown.Item>
+            <NavDropdown.Item href="/services#printer">Printer</NavDropdown.Item>            
             <NavDropdown.Divider />
-            <NavDropdown.Item href="/">Other</NavDropdown.Item>
+            <NavDropdown.Item href="/services#other">Other</NavDropdown.Item>
           </NavDropdown>
           <Nav.Link href="/users">Service Workers</Nav.Link>
         </Nav>
