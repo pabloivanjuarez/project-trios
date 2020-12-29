@@ -7,14 +7,14 @@ import ServicesList from '../components/ServicesList';
 
 
 function Users() {
-  const [users, setUsers] = useState([]);
+  // const [users, setUsers] = useState([]);
 
-  useEffect(() => {
-    API.getServices()
-    .then(res => {
-      setUsers(res.data);
-    })
-  }, [])
+  // useEffect(() => {
+  //   API.getServices()
+  //   .then(res => {
+  //     setUsers(res.data);
+  //   })
+  // }, [])
 
   return (
     <div>
