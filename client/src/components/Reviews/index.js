@@ -1,4 +1,5 @@
 import React from 'react'
+import { Nav } from 'react-bootstrap'
 
 
 function Reviews() {
@@ -19,7 +20,7 @@ function Reviews() {
               <h6 className="card-subtitle mb-2 text-muted">Carl from Vernonia</h6>
               <p className="card-text">Words words words words. Words words words words. Words words words words. Words words words words. Words words words words. Words words words words.  </p>
 
-              <a href=" " className="card-link">More Info</a>
+              <Nav.Link href="/reviews"><p className="card-link">More Info</p></Nav.Link>
             </div>
           </div>
 
@@ -29,7 +30,7 @@ function Reviews() {
               <h6 className="card-subtitle mb-2 text-muted">Gus from Springfield</h6>
               <p className="card-text">Words words words words. Words words words words. Words words words words. Words words words words. Words words words words. Words words words words.  </p>
 
-              <a href=" " className="card-link">More Info</a>
+              <Nav.Link href="/reviews"><p className="card-link">More Info</p></Nav.Link>
             </div>
           </div>
 
@@ -39,7 +40,7 @@ function Reviews() {
               <h6 className="card-subtitle mb-2 text-muted">Gary from Junction City</h6>
               <p className="card-text">Words words words words. Words words words words. Words words words words. Words words words words. Words words words words. Words words words words.  </p>
 
-              <a href=" " className="card-link">More Info</a>
+              <Nav.Link href="/reviews"><p className="card-link">More Info</p></Nav.Link>
             </div>
           </div>
           <div className="review-card col-md-3">
@@ -48,7 +49,7 @@ function Reviews() {
               <h6 className="card-subtitle mb-2 text-muted">Gary from Junction City</h6>
               <p className="card-text">Words words words words. Words words words words. Words words words words. Words words words words. Words words words words. Words words words words.  </p>
 
-              <a href=" " className="card-link">More Info</a>
+              <Nav.Link href="/reviews"><p className="card-link">More Info</p></Nav.Link>
             </div>
           </div>
           <div className="review-end"></div>
