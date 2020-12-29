@@ -26,6 +26,7 @@
     "firebase": "^8.2.1",
     "if-env": "^1.0.4",
     "mongoose": "^5.11.8",
-    "react-bootstrap": "^1.4.0"
+    "react-bootstrap": "^1.4.0",
+    "react-router-hash-link": "^2.3.1"
   }
 }

@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import API from '../utils/API';
 import UserTable from "../components/UserTable"
 import Jumbotron from "../components/Jumbotron"
+import Services from "../components/Services"
+import ServicesList from '../components/ServicesList';
 
 
 function Users() {
@@ -18,6 +20,8 @@ function Users() {
     <div>
       <Jumbotron />
       <h2>Services</h2>
+      <Services />
+      <ServicesList />
       {/* <UserTable data={users} /> */}
     </div>
   )
