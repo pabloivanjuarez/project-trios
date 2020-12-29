@@ -6,7 +6,7 @@ function Reviews() {
     <div className="container-fluid" id="review-div">
       
       <div className="row title-row align-center col-lg-12 col-sm-12" >
-        <h2 className="serviceTitle">Service Reviews</h2>
+        <h2 className="serviceTitle col-sm-12">Service Reviews</h2>
       </div>
 
       
