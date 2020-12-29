@@ -1,8 +1,22 @@
-import React from 'react'
+import React, { useEffect, useState }from 'react'
+import { useParams } from "react-router-dom";
 import { Nav, Table } from 'react-bootstrap'
+import API from "../../utils/API";
 
 
-function ServicesList() {
+function ServicesList(props) {
+// 
+  const [services, setServices] = useState({})
+
+ 
+
+  const {id} = useParams()
+  useEffect(() => {
+    API.getServices(id)
+      .then(res => setServices(res.data))
+      .catch(err => console.log(err));
+  }, [])
+
   return (
 
     <div className="container-fluid">
@@ -11,7 +25,7 @@ function ServicesList() {
         {/* cell phone support  */}
         <tr><th id="phone">Cell Phone Support</th></tr>
         <tr>
-          <th scope="col"></th>
+          <th scope="col">{services.name} or {services.phone}</th>
           <th scope="col">Name</th>
           <th scope="col">Bio</th>
           <th scope="col">Certified</th>
