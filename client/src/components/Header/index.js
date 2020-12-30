@@ -39,7 +39,11 @@ function Header() {
             <NavDropdown.Divider />
             <NavDropdown.Item href="/services#other">Other</NavDropdown.Item>
           </NavDropdown>
-          <Nav.Link href="/users">Service Workers</Nav.Link>
+          <NavDropdown title="Work" id="basic-nav-dropdown">
+            <NavDropdown.Item href="/new-user">List Work</NavDropdown.Item>
+            <NavDropdown.Divider />
+            <NavDropdown.Item href="/users">Service Workers</NavDropdown.Item>
+          </NavDropdown>         
         </Nav>
         <Form inline>
           <FormControl type="text" placeholder="Search" className="mr-sm-2" />
@@ -53,9 +57,9 @@ function Header() {
           ):(
             <Nav className="ml-auto">
               <Nav.Link onClick={handleLogout}>Log Out</Nav.Link>
-              <Navbar.Text>
+              <Nav.Link href="/account">
                 <strong>Email:</strong> {currentUser.email}
-              </Navbar.Text>
+              </Nav.Link>
             </Nav>)
           }
       </Navbar.Collapse>
