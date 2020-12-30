@@ -8,7 +8,7 @@ import UpdateProfile from "./pages/UpdateProfile";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
-import Users from "./pages/Users";
+import AllUsers from "./pages/AllUsers";
 import NewUser from "./pages/NewUser";
 // Components
 import Header from "./components/Header";
@@ -61,7 +61,7 @@ function App() {
 
             {/* All Users catalog Page */}
             <PrivateRoute path="/users">
-              <Users />
+              <AllUsers />
             </PrivateRoute>
 
           </Switch>
