@@ -16,6 +16,7 @@ import Services from "./pages/Services";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import PrivateRoute from "./components/PrivateRoute";
+import Account from "./pages/Account";
 
 
 function App() {
@@ -55,6 +56,11 @@ function App() {
             {/* Update Profile Page !User login required! */}              
             <PrivateRoute path="/update-profile">
               <UpdateProfile />
+            </PrivateRoute>
+
+            {/* User Account Page !User login required! */}              
+            <PrivateRoute path="/account">
+              <Account />
             </PrivateRoute>
 
             {/* Dashboard Page !User login required! */}

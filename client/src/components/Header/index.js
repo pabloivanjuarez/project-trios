@@ -57,9 +57,9 @@ function Header() {
           ):(
             <Nav className="ml-auto">
               <Nav.Link onClick={handleLogout}>Log Out</Nav.Link>
-              <Navbar.Text>
+              <Nav.Link href="/account">
                 <strong>Email:</strong> {currentUser.email}
-              </Navbar.Text>
+              </Nav.Link>
             </Nav>)
           }
       </Navbar.Collapse>
