@@ -8,7 +8,7 @@ import UpdateProfile from "./pages/UpdateProfile";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
-import Users from "./pages/Users";
+import AllUsers from "./pages/AllUsers";
 import NewUser from "./pages/NewUser";
 import Reviews from "./pages/Reviews";
 import Services from "./pages/Services";
@@ -64,7 +64,7 @@ function App() {
 
             {/* All Users catalog Page */}
             <PrivateRoute path="/users">
-              <Users />
+              <AllUsers />
             </PrivateRoute>
 
               {/* Customer Reviews */}
