@@ -10,10 +10,13 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import AllUsers from "./pages/AllUsers";
 import NewUser from "./pages/NewUser";
+import Reviews from "./pages/Reviews";
+import Services from "./pages/Services";
 // Components
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import PrivateRoute from "./components/PrivateRoute";
+
 
 function App() {
   return (
@@ -62,6 +65,16 @@ function App() {
             {/* All Users catalog Page */}
             <PrivateRoute path="/users">
               <AllUsers />
+            </PrivateRoute>
+
+              {/* Customer Reviews */}
+              <PrivateRoute path="/reviews">
+              <Reviews />
+            </PrivateRoute>
+
+            {/* List of Services and Service Providers available */}
+            <PrivateRoute path="/services">
+              <Services />
             </PrivateRoute>
 
           </Switch>
