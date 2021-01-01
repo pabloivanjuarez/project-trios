@@ -6,7 +6,7 @@ export default {
     //Get one service
     getService: (id) => axios.get(`/api/services/${id}`),
     //Create Service
-    createService: () => axios.post('/api/services'),
+    createService: (data) => axios.post('/api/services', data),
     //Update Service
     updateService: (id) => axios.put(`/api/services/${id}`),
     //Delete Service

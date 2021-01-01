@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import mapboxgl from 'mapbox-gl';
 import './Map.css';
-import Data from "./data"
+import Davcta from "./data"
 // import API from "../../utils/API";
 
 
