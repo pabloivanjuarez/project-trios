@@ -10,7 +10,7 @@ function Account () {
     const handleClick = (event) => {
         const {name} = event.target;
         console.log(name)
-        if (name === 'profile'){
+         if (name === 'profile'){
             setSelectedSection(
                 <>
                     <h1 className="display-4">Profile</h1>
