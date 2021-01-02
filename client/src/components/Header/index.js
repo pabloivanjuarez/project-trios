@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import { Nav, Navbar, NavDropdown, Form, FormControl, Button, Alert } from "react-bootstrap";
 import { useAuth } from "../../contexts/AuthContext";
-import { HashLink as Link } from 'react-router-hash-link';
+// import { HashLink as Link } from 'react-router-hash-link';
 import "./style.css";
 
 function Header() {
@@ -49,18 +49,17 @@ function Header() {
           <FormControl type="text" placeholder="Search" className="mr-sm-2" />
           <Button variant="outline-success">Search</Button>
         </Form>
-          {currentUser === null ? (
-            <Nav className="ml-auto">
-              <Nav.Link href="/signup">Sign Up</Nav.Link>
-              <Nav.Link href="/login">Log In</Nav.Link>
-            </Nav>
-          ):(
-            <Nav className="ml-auto">
-              <Nav.Link onClick={handleLogout}>Log Out</Nav.Link>
-              <Nav.Link href="/account">
-                <strong>Email:</strong> {currentUser.email}
-              </Nav.Link>
-            </Nav>)
+          {currentUser === null
+            ? (<Nav className="ml-auto">
+                <Nav.Link href="/signup">Sign Up</Nav.Link>
+                <Nav.Link href="/login">Log In</Nav.Link>
+              </Nav>)
+            : (<Nav className="ml-auto">
+                <Nav.Link onClick={handleLogout}>Log Out</Nav.Link>
+                <Nav.Link href="/account">
+                  <strong>Account:</strong> {currentUser.email}
+                </Nav.Link>
+              </Nav>)
           }
       </Navbar.Collapse>
     </Navbar>
