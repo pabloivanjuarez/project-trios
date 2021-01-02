@@ -5,9 +5,9 @@ import { Nav } from 'react-bootstrap'
 function Services() {
   return (
 
-    <div className="container-fluid">
+    <div className="container-fluid align-center">
 
-      <div className="product row">
+      <div className="product-row row align-center">
 
         <div className="col">
         <Nav.Link href="/services#phone"><img className="service" src="./Assets/images/cell_phone.svg" alt="cellphone" /></Nav.Link>

@@ -7,10 +7,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
+} */
 
 .nav {
   background-color: #f8f9fa;
@@ -23,7 +23,6 @@ footer {
 }
 
 .jumbotron {
-  /* visibility: hidden; */
   width: 99vw;
   height: 50vh;
   align-items: center;
@@ -35,7 +34,15 @@ footer {
 }
 
 .jumbotext {
-  padding-top: 40px;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 72px;
+  padding-top: 50px;
+  color: black;
+}
+
+.jumboSubtext {
+  font-size: 48px;
+  color: white;
 }
 
 .title-row {
@@ -49,23 +56,26 @@ footer {
 .serviceTitle {
   text-align: center;
   float: right;
-  /* visibility: hidden; */
 }
 
 .reviews-row {
-  /* visibility: hidden; */
-  /* align-items: center; */
-  /* align-content: center; */
   text-align: center;
   padding: 25px;
   margin: auto;
-  /* margin-right: auto; */
 }
+
 .review-card {
   width: 18rem;
 }
 
 /* SERVICE ICON STYLING */
+
+.product-row {
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .service {
   opacity: 1;
   display: block;
@@ -111,14 +121,11 @@ col:hover .text {
 }
 
 .new-user-title {
-  /* text-align: center; */
   margin-left: auto;
   margin-right: auto;
 }
 
 .new-user-form {
-  /* visibility: hidden; */
-  /* text-align: center; */
   margin-left: auto;
   margin-right: auto;
 }
@@ -130,7 +137,6 @@ col:hover .text {
 /* Review div */
 
 #review-div{
-  color:blue !important;
   align-content: center;
   
 }
