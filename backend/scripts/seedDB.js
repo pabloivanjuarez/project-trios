@@ -16,7 +16,7 @@ const servicesSeed = [
     phone: 555-555-5555,
     hourly: 29,
     distance: 2.6,
-    houseNumber: 2823,
+    houseNumber: 2211,
     street: "Ne Tillamook",
     city: "Portland",
     state: "Oregon",
