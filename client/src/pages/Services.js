@@ -7,14 +7,14 @@ import ServicesList from '../components/ServicesList';
 
 
 function Users() {
-  // const [users, setUsers] = useState([]);
+  const [users, setUsers] = useState([]);
 
-  // useEffect(() => {
-  //   API.getServices()
-  //   .then(res => {
-  //     setUsers(res.data);
-  //   })
-  // }, [])
+  useEffect(() => {
+    API.getServices()
+    .then(res => {
+      setUsers(res.data);
+    })
+  }, [])
 
   return (
     <div>
@@ -22,7 +22,7 @@ function Users() {
       <h2>Services</h2>
       <Services />
       <ServicesList />
-      {/* <UserTable data={users} /> */}
+      <UserTable data={users} />
     </div>
   )
 }
