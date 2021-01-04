@@ -9,7 +9,7 @@ function Services() {
 
       <div className="product-row row align-center">
 
-        <div className="col my-auto">
+        <div className="col my-auto service-icon">
         <Nav.Link href="/services#phone"><img className="service" src="./Assets/images/mobile_icon.png" alt="cellphone" /></Nav.Link>
           <div className="middle">
             <div className="text">Mobile</div>
