@@ -11,7 +11,6 @@ function Reviews() {
       </div>
 
       <div className="row v-100 reviews-row">
-        <div className="col"></div>
         <div className="col">
           {/* <div className="review-card col-md-3">
             <div className="card-body">
@@ -100,7 +99,6 @@ function Reviews() {
             </Card.Body>
           </Card>
         </div>
-        <div className="col"></div>
         <div className="review-end"></div>
       </div>
     </div>
