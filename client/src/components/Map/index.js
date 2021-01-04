@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState } from 'react';
 import mapboxgl from 'mapbox-gl';
 import './Map.css';
 // import Data from "./data"
-// import API from "../../utils/API";
+import API from "../../utils/API";
 
 
 mapboxgl.accessToken =
@@ -11,28 +11,7 @@ mapboxgl.accessToken =
    
   
   //bringing in data
-  // function Services() {
-  //  const [services, setServices] = useState([])
 
-  //  useEffect(() => {
-  //    getServices()
-  //  },)
-
-  //  function getServices() {
-  //    API.get()
-  //      .then(res => 
-  //        setServices(res.data)
-  //      )
-  //      .catch(err => console.log(err));
-  //      console.log(services)
-  //  };
-
-   
-
-  // };
-  // console.log(Services);
-  
-// console.log(Data + "hello?");
 
 
   
@@ -52,9 +31,7 @@ const Map = () => {
       zoom: 9
     });
 
-
- 
-
+  
     //GeoJSON file
 
     var geojson = {
@@ -142,17 +119,9 @@ geojson.features.forEach(function(marker) {
     
 });
 
-    // Add pins to map
-    
 
-//     var marker = new mapboxgl.Marker()
-// .setLngLat([-122.6830589750817, 45.530101282930936])
-// // eslint-disable-next-line
-// .setPopup(new mapboxgl.Popup().setHTML("<h5>iPhone service</h5>" + "<p>More Details Here</p>" + "<p>503-555-5555</p>" + "<a href=#>VIEW MORE DETAILS</a>"))
-// .addTo(map);
 
- 
-// console.log(marker.getPopup()); // return the popup instance
+
 
 
     

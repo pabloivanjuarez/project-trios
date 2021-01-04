@@ -20,7 +20,14 @@ const servicesSeed = [
     street: "Ne Tillamook",
     city: "Portland",
     state: "Oregon",
-    zip: 97212
+    zip: 97212,
+    "geometry": {
+              "coordinates": [
+                -122.64422,
+                45.538049
+              ],
+              "type": "Point"
+            }
   },
   {
     name: "Sam Smith",
