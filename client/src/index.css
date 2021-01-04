@@ -35,8 +35,8 @@ footer {
 
 .jumbotext {
   font-family: 'Permanent Marker', cursive;
-  font-size: 72px;
-  padding-top: 50px;
+  font-size: 48pt;
+  padding-top: auto;
   color: black;
 }
 
@@ -140,3 +140,80 @@ col:hover .text {
   align-content: center;
   
 }
+
+
+/* MOBILE CSS FIXES  */
+@media only screen and (max-width: 991px) {
+
+  html, body {
+    height: auto;
+   }
+
+   .jumbotext {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 48px;
+    padding-top: auto;
+    color: black;
+  }
+  
+  .jumboSubtext {
+    font-size: 36px;
+    color: white;
+  }
+ }
+
+ @media only screen and (max-width: 813px) {
+
+  html, body {
+    height: auto;
+   }
+
+   .jumbotext {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 36px;
+    padding-top: auto;
+    color: black;
+  }
+  
+  .jumboSubtext {
+    font-size: 28px;
+    color: white;
+  }
+ }
+
+ @media only screen and (max-width: 737px) {
+
+  html, body {
+    height: auto;
+   }
+
+   .jumbotext {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 30px;
+    padding-top: none;
+    color: black;
+  }
+  
+  .jumboSubtext {
+    font-size: 24px;
+    color: white;
+  }
+
+
+ }
+
+ @media only screen and (max-width: 575px) {
+
+ .jumbotext {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 32px;
+    padding-top: none;
+    color: black;
+  }
+  
+  .jumboSubtext {
+    font-size: 28px;
+    color: white;
+  }
+
+ }
