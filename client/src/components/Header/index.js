@@ -39,28 +39,29 @@ function Header() {
             <NavDropdown.Divider />
             <NavDropdown.Item href="/services#other">Other</NavDropdown.Item>
           </NavDropdown>
-          <NavDropdown title="Work" id="basic-nav-dropdown">
+          {/* <NavDropdown title="Work" id="basic-nav-dropdown">
             <NavDropdown.Item href="/new-user">List Work</NavDropdown.Item>
             <NavDropdown.Divider />
             <NavDropdown.Item href="/users">Service Workers</NavDropdown.Item>
-          </NavDropdown>         
+          </NavDropdown> */}
         </Nav>
         <Form inline>
           <FormControl type="text" placeholder="Search" className="mr-sm-2" />
           <Button variant="outline-success">Search</Button>
         </Form>
-          {currentUser === null
-            ? (<Nav className="ml-auto">
-                <Nav.Link href="/signup">Sign Up</Nav.Link>
-                <Nav.Link href="/login">Log In</Nav.Link>
-              </Nav>)
-            : (<Nav className="ml-auto">
-                <Nav.Link onClick={handleLogout}>Log Out</Nav.Link>
-                <Nav.Link href="/account">
-                  <strong>Account:</strong> {currentUser.email}
-                </Nav.Link>
-              </Nav>)
-          }
+          {currentUser === null ? (
+            <Nav className="ml-auto">
+              <Nav.Link href="/signup">Sign Up</Nav.Link>
+              <Nav.Link href="/login">Log In</Nav.Link>
+            </Nav>
+          ) : (
+            <Nav className="ml-auto">
+              <Nav.Link onClick={handleLogout}>Log Out</Nav.Link>
+              <Nav.Link href="/account">
+                <strong>Profile:</strong> {currentUser.email}
+              </Nav.Link>
+            </Nav>
+          )}
       </Navbar.Collapse>
     </Navbar>
     </>
