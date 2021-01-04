@@ -161,6 +161,10 @@ col:hover .text {
     font-size: 36px;
     color: white;
   }
+
+  .product-row {
+    visibility: hidden;
+  }
  }
 
  @media only screen and (max-width: 813px) {
