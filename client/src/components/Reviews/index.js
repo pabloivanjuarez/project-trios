@@ -10,10 +10,9 @@ function Reviews() {
         <h2 className="serviceTitle col-sm-12">Service Reviews</h2>
       </div>
 
-      
-
-        <div className="row v-100 reviews-row">
-         
+      <div className="row v-100 reviews-row">
+        <div className="col"></div>
+        <div className="col">
           {/* <div className="review-card col-md-3">
             <div className="card-body">
               <h5 className="card-title">Very Helpful</h5>
@@ -34,8 +33,8 @@ function Reviews() {
               <Card.Link href="/reviews">More Info</Card.Link>
             </Card.Body>
           </Card>
-          <br />
-
+        </div>
+        <div className="col">
           {/* <div className="review-card col-md-3">
             <div className="card-body">
               <h5 className="card-title">Got My Phone Back</h5>
@@ -56,7 +55,8 @@ function Reviews() {
               <Card.Link href="/reviews">More Info</Card.Link>
             </Card.Body>
           </Card>
-
+        </div>
+        <div className="col">
           {/* <div className="review-card col-md-3">
             <div className="card-body">
               <h5 className="card-title">Bingo!</h5>
@@ -77,7 +77,8 @@ function Reviews() {
               <Card.Link href="/reviews">More Info</Card.Link>
             </Card.Body>
           </Card>
-
+        </div>
+        <div className="col">
           {/* <div className="review-card col-md-3">
             <div className="card-body">
               <h5 className="card-title">Upgraded and Smokin' Fast</h5>
@@ -93,22 +94,17 @@ function Reviews() {
             <Card.Body>
               <Card.Title>Upgraded and Smokin' Fast</Card.Title>
               <Card.Text>
-              I was unsure about upgrading my PC so I used your services and found Estelle. Her certification gave me the peace of mind I needed to call her and get the support I needed.
+                I was unsure about upgrading my PC so I used your services and found Estelle. Her certification gave me the peace of mind I needed to call her and get the support I needed.
               </Card.Text>
               <Card.Link href="/reviews">More Info</Card.Link>
             </Card.Body>
           </Card>
-
-          <div className="review-end"></div>
-
-
         </div>
-
+        <div className="col"></div>
+        <div className="review-end"></div>
       </div>
-
-
-
+    </div>
   )
-}
+};
 
-export default Reviews
+export default Reviews;
