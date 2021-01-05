@@ -10,7 +10,8 @@ function UserTable(props) {
           <tr>
             <th scope="col"></th>
             <th scope="col">Name</th>
-            <th scope="col">Bio</th>
+            <th scope="col">Service</th>
+            <th scope="col">Email</th>
             <th scope="col">Certified</th>
           </tr>
         </thead>
@@ -26,10 +27,11 @@ function UserTable(props) {
                   ************************************************************
                   <img className="tablePhoto" src={user.userImg} alt="user"/> 
                   ************************************************************/}
-                  <img className="tablePhoto" src='./Assets/images/7.jpg' alt='user'></img>
+                  <img className="tablePhoto" src='./Assets/images/user_icon.png' alt='user'></img>
                 </th>
                 <td>{user.name}</td>
                 <td>{user.service}</td>
+                <td><a href = {"mailto:" + user.email }>{user.email}</a></td>
                 <td>
                   <img className="badgeImg" src="./Assets/images/cert_badge.png" alt="user"/>
                 </td>

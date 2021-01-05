@@ -121,6 +121,10 @@ col:hover .text {
   width: 30px;
 }
 
+.tablePhoto{
+  width: 100px;
+}
+
 .new-user-title {
   margin-left: auto;
   margin-right: auto;
