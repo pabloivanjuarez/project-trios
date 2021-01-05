@@ -24,7 +24,7 @@ function ServicesList(props) {
       <thead>
         {/* cell phone support  */}
         <tr>
-          <th id="phone">Cell Phone Support</th></tr>
+          <th  colSpan="4" id="phone">Cell Phone Support</th></tr>
         <tr>
 
           
@@ -49,7 +49,7 @@ function ServicesList(props) {
         
 
          {/* tablet support  */}
-         <tr><th id="tablet">Tablet Support</th></tr>
+         <tr><th colSpan="4" id="tablet">Tablet Support</th></tr>
         <tr>
           
           <th scope="col">Ginger Harris</th>
@@ -65,7 +65,7 @@ function ServicesList(props) {
         </tr>
 
          {/* zoom/skype support  */}
-         <tr><th id="zoom">Zoom/Skype Support</th></tr>
+         <tr><th colSpan="4" id="zoom">Zoom/Skype Support</th></tr>
         <tr>
           <th scope="col">Keith Lewis</th>
           <th scope="col">Kids need to get back to e-learning?</th>
@@ -97,7 +97,7 @@ function ServicesList(props) {
           <th scope="col">more</th>
         </tr>
          {/* Wifi support  */}
-         <tr><th id="wifi">WiFi Support</th></tr>
+         <tr><th colSpan="4" id="wifi">WiFi Support</th></tr>
         <tr>
           <th scope="col">Umar Vaughn</th>
           <th scope="col">Need to change your WiFi user/password?  Call me</th>
@@ -118,7 +118,7 @@ function ServicesList(props) {
         </tr>
 
         {/* Internet support  */}
-        <tr><th id="internet">Internet Support</th></tr>
+        <tr><th colSpan="4" id="internet">Internet Support</th></tr>
         <tr>
           <th scope="col">Ann Bradley</th>
           <th scope="col">Internet Browser help</th>
@@ -133,7 +133,7 @@ function ServicesList(props) {
         </tr>
   
          {/* computer support  */}
-         <tr><th id="computer">Computer Support</th></tr>
+         <tr><th colSpan="4" id="computer">Computer Support</th></tr>
         <tr>
           <th scope="col">Estelle Fontaine</th>
           <th scope="col">A+ Certified Desktop Support</th>
@@ -165,7 +165,7 @@ function ServicesList(props) {
           <th scope="col">more</th>
         </tr>
          {/* printer support  */}
-         <tr id="printer"><th>Printer Support</th></tr>
+         <tr><th colSpan="4" id="printer">Printer Support</th></tr>
         <tr>
           <th scope="col">Omar Pascale</th>
           <th scope="col">PC Load letter?  What does that mean?</th>
@@ -174,7 +174,7 @@ function ServicesList(props) {
         </tr>
      
          {/* other support  */}
-         <tr><th id="other">Other Support</th></tr>
+         <tr><th colSpan="4" id="other">Other Support</th></tr>
         <tr>
           <th scope="col">Quinlee Ranaldo</th>
           <th scope="col">Set up that ipod with your favorite music</th>
