@@ -7,10 +7,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
+} */
 
 .nav {
   background-color: #f8f9fa;
@@ -20,10 +20,10 @@ footer {
   height: 50px;
   padding: 10px;
   background-color: lightblue;
+  color: white;
 }
 
 .jumbotron {
-  /* visibility: hidden; */
   width: 99vw;
   height: 50vh;
   align-items: center;
@@ -35,7 +35,15 @@ footer {
 }
 
 .jumbotext {
-  padding-top: 40px;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 48pt;
+  padding-top: auto;
+  color: black;
+}
+
+.jumboSubtext {
+  font-size: 48px;
+  color: white;
 }
 
 .title-row {
@@ -49,23 +57,26 @@ footer {
 .serviceTitle {
   text-align: center;
   float: right;
-  /* visibility: hidden; */
 }
 
 .reviews-row {
-  /* visibility: hidden; */
-  /* align-items: center; */
-  /* align-content: center; */
   text-align: center;
   padding: 25px;
   margin: auto;
-  /* margin-right: auto; */
 }
+
 .review-card {
   width: 18rem;
 }
 
 /* SERVICE ICON STYLING */
+
+.product-row {
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .service {
   opacity: 1;
   display: block;
@@ -95,10 +106,10 @@ footer {
 }
 
 .text {
-  background-color: cornflowerblue;
-  border-radius: 10px;
+  background-color: darkblue;
+  border-radius: 5px;
   color: white;
-  font-size: 16px;
+  font-size: 24px;
   padding: 5px 10px;
 }
 
@@ -111,14 +122,11 @@ col:hover .text {
 }
 
 .new-user-title {
-  /* text-align: center; */
   margin-left: auto;
   margin-right: auto;
 }
 
 .new-user-form {
-  /* visibility: hidden; */
-  /* text-align: center; */
   margin-left: auto;
   margin-right: auto;
 }
@@ -130,7 +138,87 @@ col:hover .text {
 /* Review div */
 
 #review-div{
-  color:blue !important;
   align-content: center;
   
 }
+
+
+/* MOBILE CSS FIXES  */
+@media only screen and (max-width: 991px) {
+
+  html, body {
+    height: auto;
+   }
+
+   .jumbotext {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 48px;
+    padding-top: auto;
+    color: black;
+  }
+  
+  .jumboSubtext {
+    font-size: 36px;
+    color: white;
+  }
+
+  .product-row {
+    visibility: hidden;
+  }
+ }
+
+ @media only screen and (max-width: 813px) {
+
+  html, body {
+    height: auto;
+   }
+
+   .jumbotext {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 36px;
+    padding-top: auto;
+    color: black;
+  }
+  
+  .jumboSubtext {
+    font-size: 28px;
+    color: white;
+  }
+ }
+
+ @media only screen and (max-width: 737px) {
+
+  html, body {
+    height: auto;
+   }
+
+   .jumbotext {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 30px;
+    padding-top: none;
+    color: black;
+  }
+  
+  .jumboSubtext {
+    font-size: 24px;
+    color: white;
+  }
+
+
+ }
+
+ @media only screen and (max-width: 575px) {
+
+ .jumbotext {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 32px;
+    padding-top: none;
+    color: black;
+  }
+  
+  .jumboSubtext {
+    font-size: 28px;
+    color: white;
+  }
+
+ }

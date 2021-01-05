@@ -11,8 +11,10 @@ function Home() {
     <div>
       <Jumbotron />
       <Subtitle />
-      <Services />
       <Map />
+      <br />
+      <br />
+      <Services />
       <Reviews />
     </div>
   )

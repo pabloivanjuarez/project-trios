@@ -16,11 +16,18 @@ const servicesSeed = [
     phone: 555-555-5555,
     hourly: 29,
     distance: 2.6,
-    houseNumber: 2823,
+    houseNumber: 2211,
     street: "Ne Tillamook",
     city: "Portland",
     state: "Oregon",
-    zip: 97212
+    zip: 97212,
+    "geometry": {
+              "coordinates": [
+                -122.64422,
+                45.538049
+              ],
+              "type": "Point"
+            }
   },
   {
     name: "Sam Smith",
