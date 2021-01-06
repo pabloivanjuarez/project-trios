@@ -34,9 +34,9 @@ function Newuser() {
 
       <div className="row col-sm-12 col-md-8 col-lg-12 align-items-center">
 
-        <div className="new-user-title">
+        {/* <div className="new-user-title">
           <h1>Sign Up with Nerds Next Door</h1>
-        </div>
+        </div> */}
 
       </div>
 
@@ -44,7 +44,7 @@ function Newuser() {
         <div className="new-user-form align-center">
         <Form>
 
-          <Form.Group controlId="formBasicEmail"  onChange={handleInputChange}>
+          {/* <Form.Group controlId="formBasicEmail"  onChange={handleInputChange}>
             <Form.Label>Email address</Form.Label>
             <Form.Control name='email' type="email" placeholder="Enter email" />
           </Form.Group>
@@ -52,7 +52,7 @@ function Newuser() {
           <Form.Group controlId="formBasicPassword"  onChange={handleInputChange}>
             <Form.Label>Password</Form.Label>
             <Form.Control name='password' type="password" placeholder="Password" />
-          </Form.Group>
+          </Form.Group> */}
 
           <h3>What Kind Of Nerd Are You?</h3>
           <h5>I can help with:</h5>

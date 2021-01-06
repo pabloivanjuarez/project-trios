@@ -61,6 +61,17 @@ function Account () {
                     <p>users response</p>
                 </>
             )
+        } else if (name === 'new-user'){
+            setSelectedSection(
+                <>
+                    <h1 className="display-4">Update Profile</h1>
+                    <hr className="my-4" />
+                    
+                        
+                    
+                   
+                </>
+            )
         }
         
     }
@@ -85,6 +96,9 @@ function Account () {
                             </ListGroup.Item>
                             <ListGroup.Item>
                                 <button name='experience' onClick={handleClick}>Experience</button>
+                            </ListGroup.Item>
+                            <ListGroup.Item>
+                            <Card.Link href="/new-user">Update Profile</Card.Link>
                             </ListGroup.Item>
                         </ListGroup>
                     </Card>
