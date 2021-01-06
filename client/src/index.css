@@ -69,6 +69,9 @@ footer {
   width: 18rem;
 }
 
+.reviewCard {
+  margin: 10px;
+}
 /* SERVICE ICON STYLING */
 
 .product-row {
@@ -121,6 +124,10 @@ col:hover .text {
   width: 30px;
 }
 
+.tablePhoto{
+  width: 100px;
+}
+
 .new-user-title {
   margin-left: auto;
   margin-right: auto;
@@ -131,16 +138,46 @@ col:hover .text {
   margin-right: auto;
 }
 
+/* Review div */
+#review-div{
+  align-content: center;
+}
+
+
+
+/* SERVICES TABLE  */
+.table {
+  /* width: 100%; */
+  margin-top: 50px;
+  border: none;
+  padding: 15px;
+  text-align: center;
+}
+
+#phone, #tablet, #zoom, #wifi, #computer, #printer, #internet, #other {
+  text-align: center;
+  background-color: cornflowerblue;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 24px;
+  color: white;
+  border-radius: 25px;
+}
+
+td, th {
+  font-weight: 400;
+}
+
+tr:nth-child(odd) {
+  background-color: #eee;
+}
+
 /* div {
   border: 1px solid red;
 } */
 
-/* Review div */
 
-#review-div{
-  align-content: center;
-  
-}
+
+
 
 
 /* MOBILE CSS FIXES  */

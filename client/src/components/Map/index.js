@@ -39,8 +39,9 @@ const Map = () => {
         {
           "type": "Feature",
           "properties": {
-            "service": "iPhone Repair",
-            "phone": "456-111-5555"
+            "service": "Printers & Printing",
+            "phone": "503-111-1111",
+            "name": "Alisha Benson"
           },
           "geometry": {
             "coordinates": [
@@ -54,8 +55,9 @@ const Map = () => {
         {
           "type": "Feature",
           "properties": {
-            "service": "Wifi Help",
-            "phone": "503-222-2223"
+            "service": "Wifi & Internet",
+            "phone": "503-222-2223",
+            "name": "Katie Black"
           },
           "geometry": {
             "coordinates": [
@@ -69,8 +71,25 @@ const Map = () => {
         {
           "type": "Feature",
           "properties": {
-            "service": "Computer Repair",
-            "phone": "503-111-1111"
+            "name": "Paul The Computer Guy",
+            "phone": "503-666-6666",
+            "service": "Computer Stuff"
+          },
+          "geometry": {
+            "coordinates": [
+              -122.771086,
+              45.430953
+            ],
+            "type": "Point"
+          },
+          "id": "478469508fc54efa20a0d87e4c4cf692"
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "service": "iphone Help & Repair",
+            "phone": "503-111-1111",
+            "name": "Sam Smith"
           },
           "geometry": {
             "coordinates": [
@@ -84,8 +103,9 @@ const Map = () => {
         {
           "type": "Feature",
           "properties": {
-            "service": "Google Help",
-            "phone": "503-666-6663"
+            "service": "Zoom & skype",
+            "phone": "503-666-6663",
+            "name": "Sarah Jenkins"
           },
           "geometry": {
             "coordinates": [
@@ -95,6 +115,22 @@ const Map = () => {
             "type": "Point"
           },
           "id": "8110156bbaec66a657bf12029b3a491a"
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "phone": "503-999-9999",
+            "service": "Tablet Help & Repair",
+            "name": "Gavin Hope"
+          },
+          "geometry": {
+            "coordinates": [
+              -122.537426,
+              45.503925
+            ],
+            "type": "Point"
+          },
+          "id": "a61476532913b9f18ae311681dc1be39"
         }
       ],
       "type": "FeatureCollection"
@@ -114,7 +150,7 @@ geojson.features.forEach(function(marker) {
     new mapboxgl.Marker(el)
   .setLngLat(marker.geometry.coordinates)
   .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
-    .setHTML('<h5>' + marker.properties.service + '</h5><p>' + marker.properties.phone + '</p>'))
+    .setHTML('<h5>' + marker.properties.name + '</h5><p>' + marker.properties.service + '</p>'))
   .addTo(map);
     
 });
