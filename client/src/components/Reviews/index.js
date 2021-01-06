@@ -10,7 +10,7 @@ function Reviews() {
         <h2 className="serviceTitle col-sm-12">Service Reviews</h2>
       </div>
 
-      <div className="row v-100 reviews-row">
+      <div className="row v-100 reviews-row col-sm-12">
         <div className="col">
           {/* <div className="review-card col-md-3">
             <div className="card-body">
@@ -22,7 +22,7 @@ function Reviews() {
             </div>
           </div> */}
 
-          <Card border="primary" style={{ width: '18rem' }}>
+          <Card className="reviewCard" border="primary" style={{ width: '18rem' }}>
             <Card.Header><strong>Carl</strong> › Vernonia</Card.Header>
             <Card.Body>
               <Card.Title>Very Helpful</Card.Title>
@@ -44,7 +44,7 @@ function Reviews() {
             </div>
           </div> */}
 
-          <Card border="primary" style={{ width: '18rem' }}>
+          <Card className="reviewCard" border="primary" style={{ width: '18rem' }}>
             <Card.Header><strong>Chaz</strong> › Newberg</Card.Header>
             <Card.Body>
               <Card.Title>Got My Phone Back</Card.Title>
@@ -66,7 +66,7 @@ function Reviews() {
             </div>
           </div> */}
 
-          <Card border="primary" style={{ width: '18rem' }}>
+          <Card className="reviewCard" border="primary" style={{ width: '18rem' }}>
             <Card.Header><strong>Gwen</strong> › Vancouver</Card.Header>
             <Card.Body>
               <Card.Title>Bingo!</Card.Title>
@@ -88,7 +88,7 @@ function Reviews() {
             </div>
           </div> */}
 
-          <Card border="primary" style={{ width: '18rem' }}>
+          <Card className="reviewCard" border="primary" style={{ width: '18rem' }}>
             <Card.Header><strong>Brett</strong> › Woodstock</Card.Header>
             <Card.Body>
               <Card.Title>Upgraded and Smokin' Fast</Card.Title>
