@@ -1,7 +1,8 @@
 {
   "name": "project-trois",
   "version": "1.0.0",
-  "description": "",
+  "description": "Bearded Dev Dudes, do stuff.",
+  "engines": {"node": "12.x"},
   "main": "server.js",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
