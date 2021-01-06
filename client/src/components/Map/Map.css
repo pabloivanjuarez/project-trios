@@ -57,10 +57,11 @@
   }
  
   .marker {
-    background-image: url('map-icon-red.png');
+    background-image: url('brain\ icon.png');
     background-size: cover;
-    width: 35px;
-    height: 35px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     cursor: pointer;
+    box-shadow: #404040;
   }
