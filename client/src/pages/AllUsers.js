@@ -17,7 +17,7 @@ function Users() {
   return (
     <div>
       <Jumbotron />
-      <h2>Roster</h2>
+      <h2>Service Providers</h2>
       <UserTable data={users} />
     </div>
   )

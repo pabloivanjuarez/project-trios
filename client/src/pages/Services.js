@@ -1,20 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import API from '../utils/API';
-import UserTable from "../components/UserTable"
+// import UserTable from "../components/UserTable"
 import Jumbotron from "../components/Jumbotron"
 import Services from "../components/Services"
 import ServicesList from '../components/ServicesList';
 
 
 function Users() {
-  // const [users, setUsers] = useState([]);
+  const [users, setUsers] = useState([]);
 
-  // useEffect(() => {
-  //   API.getServices()
-  //   .then(res => {
-  //     setUsers(res.data);
-  //   })
-  // }, [])
+  useEffect(() => {
+    API.getServices()
+    .then(res => {
+      setUsers(res.data);
+    })
+  }, [])
 
   return (
     <div>

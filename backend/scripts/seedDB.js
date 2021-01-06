@@ -11,52 +11,124 @@ mongoose.connect(
 const servicesSeed = [
   {
     name: "Paul The Computer Guy",
-    email: "user123@123.com",
+    email: "Paul@computers.net",
     service: "Computer Repair",
     phone: 555-555-5555,
     hourly: 29,
     distance: 2.6,
-    houseNumber: 2211,
-    street: "Ne Tillamook",
+    houseNumber: 22161,
+    street: "",
     city: "Portland",
     state: "Oregon",
-    zip: 97212
+    zip: 97212,
+    "geometry": {
+              "coordinates": [
+                -122.771086,
+                45.430953
+              ],
+              "type": "Point"
+            }
   },
   {
     name: "Sam Smith",
-    service: "iPhone Repair",
-    phone: 456-111-5555,
-    hourly: 20,
-    distance: 5.6
+    email: "sam@iphone.net",
+    service: "iPhone help",
+    phone: 555-555-5555,
+    hourly: 29,
+    distance: 2.6,
+    houseNumber: 2211,
+    street: "",
+    city: "Portland",
+    state: "Oregon",
+    zip: 97212,
+    "geometry": {
+              "coordinates": [
+                -122.64422,
+                45.538049
+              ],
+              "type": "Point"
+            }
   },
   {
     name: "Sarah Jenkins",
-    service: "Microsoft Word",
-    phone: 123-456-789,
-    hourly: 19,
-    distance: 0.5
+    email: "sarah@zoom.net",
+    service: "Zoom & Skype",
+    phone: 555-555-5555,
+    hourly: 29,
+    distance: 2.6,
+    houseNumber: 123,
+    street: "",
+    city: "Portland",
+    state: "Oregon",
+    zip: 97212,
+    "geometry": {
+              "coordinates": [
+                -122.65579,
+                45.510202
+              ],
+              "type": "Point"
+            }
+  },
+  {
+    name: "Gavin 'Tablet' Hope",
+    email: "gavin@tablets.net",
+    service: "Tablet help & repair",
+    phone: 555-555-5555,
+    hourly: 29,
+    distance: 2.6,
+    houseNumber: 5611,
+    street: "",
+    city: "Portland",
+    state: "Oregon",
+    zip: 97212,
+    "geometry": {
+              "coordinates": [
+                -122.537426,
+              45.503925
+              ],
+              "type": "Point"
+            }
   },
   {
     name: "Katie Black",
-    service: "Facebook Help",
-    phone: 541-123-4567,
-    hourly: 35,
-    distance: 7
-  },
-  {
-    name: "Gavin Hope",
-    service: "Cable Box Repair",
-    phone: 503-678-9102,
-    hourly: 45,
-    distance: 1.6
+    email: "katie@comcast.net",
+    service: "wifi + Internet (but I don't really help)",
+    phone: 555-555-5555,
+    hourly: 29,
+    distance: 2.6,
+    houseNumber: 611,
+    street: "",
+    city: "Portland",
+    state: "Oregon",
+    zip: 97212,
+    "geometry": {
+              "coordinates": [
+                -122.709149,
+              45.537858
+              ],
+              "type": "Point"
+            }
   },
   {
     name: "Alisha Benson",
-    service: "Printing & Fax",
-    phone: 123-456-789,
+    email: "alisha@printers.net",
+    service: "I'll print your pictures and docs",
+    phone: 555-555-5555,
     hourly: 29,
-    distance: 2
-  }
+    distance: 2.6,
+    houseNumber: 5611,
+    street: "",
+    city: "Portland",
+    state: "Oregon",
+    zip: 97212,
+    "geometry": {
+              "coordinates": [
+                -122.658104,
+                45.521075
+              ],
+              "type": "Point"
+            }
+  },
 ];
 
 

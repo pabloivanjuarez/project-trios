@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 import { Form, Button, Card, Alert } from "react-bootstrap";
 import { useAuth } from "../../contexts/AuthContext";
+import API from "../../utils/API"
 
 export default function Signup() {
   const [error, setError] = useState("");
@@ -23,13 +24,18 @@ export default function Signup() {
       setError("");
       setLoading(true);
       await signup(emailRef.current.value, passwordRef.current.value);
+
+      // Create new MongoDB user from new email upon sign up (console log new user/ object) [1/1/21 CS]
+      let userObj = {email: emailRef.current.value};
+      API.createUser(userObj);
+      
       history.push("/");
     } catch {
       setError("Failed to create an account");
     }
 
     setLoading(false);
-  }
+  };
 
   return (
     <div
