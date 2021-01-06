@@ -25,7 +25,6 @@ export default function Signup() {
       setLoading(true);
       await signup(emailRef.current.value, passwordRef.current.value);
 
-      // Create new MongoDB user from new email upon sign up (console log new user/ object) [1/1/21 CS]
       let userObj = {email: emailRef.current.value};
       API.createUser(userObj);
       
