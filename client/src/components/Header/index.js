@@ -1,19 +1,18 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import { Nav, Navbar, NavDropdown, Form, FormControl, Button, Alert } from "react-bootstrap";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMobileAlt, faTabletAlt, faWifi, faDesktop, faPrint } from '@fortawesome/free-solid-svg-icons'
-import { faSkype } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMobileAlt, faTabletAlt, faWifi, faDesktop, faPrint } from '@fortawesome/free-solid-svg-icons';
+import { faSkype } from '@fortawesome/free-brands-svg-icons';
 import { useAuth } from "../../contexts/AuthContext";
 // import { HashLink as Link } from 'react-router-hash-link';
+
 import "./style.css";
 
 function Header() {
   const [error, setError] = useState("");
   const { currentUser, logout } = useAuth();
   const history = useHistory();
-
-  // const mobile = <FontAwesomeIcon icon={faMobile} />
 
   async function handleLogout() {
     setError("");
@@ -44,11 +43,6 @@ function Header() {
             <NavDropdown.Divider />
             <NavDropdown.Item href="/services#other">Other</NavDropdown.Item>
           </NavDropdown>
-          {/* <NavDropdown title="Work" id="basic-nav-dropdown">
-            <NavDropdown.Item href="/new-user">List Work</NavDropdown.Item>
-            <NavDropdown.Divider />
-            <NavDropdown.Item href="/users">Service Workers</NavDropdown.Item>
-          </NavDropdown> */}
         </Nav>
         <Form inline>
           <FormControl type="text" placeholder="Search" className="mr-sm-2" />
