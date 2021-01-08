@@ -1,9 +1,9 @@
 
   # Nerds Next Door
   ![License Badge](https://img.shields.io/badge/License-MIT-blue) 
-  ![Code Badge](https://img.shields.io/badge/JavaScript-100%25-green)
-  ![Code Badge](https://img.shields.io/badge/JavaScript-100%25-green)
-  ![Code Badge](https://img.shields.io/badge/JavaScript-100%25-green)
+  ![JS Badge](https://img.shields.io/badge/JavaScript-51.3%25-yellow)
+  ![HTML Badge](https://img.shields.io/badge/JavaScript-42.8%25-red)
+  ![CSS Badge](https://img.shields.io/badge/CSS-5.9%25-purple)
   
   ## Description
 
