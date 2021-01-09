@@ -39,7 +39,7 @@
 ---  
   ## Contributing
 
-  Christian Sinai, David Jaffe, Matthew Adamson, Hayden Rust, Pablo Juarez\
+  [Christian Sinai](https://github.com/HumbleKind), [David Jaffe](https://github.com/davidnjaffe), [Matthew Adamson](https://github.com/mx6), [Hayden Rust](https://github.com/haydenrust1), [Pablo Juarez](https://github.com/pabloivanjuarez)
 
   
 ---  
