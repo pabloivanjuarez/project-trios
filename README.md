@@ -1,13 +1,50 @@
-Project 3 requirements 
 
-* Must use ReactJS in some way
-* Must use a Node and Express Web Server
-* Must be backed by a MySQL or MongoDB database with a Sequelize or Mongoose ORM
-* Must have both GET and POST routes for retrieving and adding new data
-* Must deploy this application using Heroku with data. Follow our guide on [deploying MERN applications to Heroku](../04-Important/MERNHerokuDeploy.md) to do so.
-* Must utilize at least 2 libraries, packages, or technologies that we haven't discussed
-* Must allow for or involve the authentication of users in some way
-* Must have a polished front end/UI
-* Must have a folder structure that meets the MVC paradigm
-* Must meet good quality coding standards (indentation, scoping, naming)
-* Must protect API keys in Node with environment variables
+  # Nerds Next Door
+  ![License Badge](https://img.shields.io/badge/License-MIT-blue) 
+  ![JS Badge](https://img.shields.io/badge/JavaScript-51.3%25-yellow)
+  ![HTML Badge](https://img.shields.io/badge/JavaScript-42.8%25-red)
+  ![CSS Badge](https://img.shields.io/badge/CSS-5.9%25-purple)
+  
+  ## Description
+
+  Nerds Next Door is atech support resource for finding technical assistance for a variety of devices. It's a resource for both end-users and support providers to connect directly to create technical solutions.
+
+
+---
+  ## Table of Contents
+  
+  * [Installation](#installastion)
+
+  * [Usage](#usage)
+
+  * [Contributing](#contributing)
+
+  * [Questions](#questions)
+
+
+---
+  ## Installation
+
+  To install necessary dependencies, run the following command:
+  
+  ### ```npm i```
+
+
+---
+  ## Usage
+ 
+![usage](usageREADME.gif)
+
+
+---  
+  ## Contributing
+
+  [Christian Sinai](https://github.com/HumbleKind), [David Jaffe](https://github.com/davidnjaffe), [Matthew Adamson](https://github.com/mx6), [Hayden Rust](https://github.com/haydenrust1), [Pablo Juarez](https://github.com/pabloivanjuarez)
+
+  
+---  
+  ## Questions
+  
+  If you have any questions about the project, open an issue or contact me directly through my [email](mailto:weekdaypablo@gmail.com).
+  You can find more of my work at [Git Hub](https://github.com/pabloivanjuarez).
+
